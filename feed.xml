@@ -3,7 +3,7 @@
     <title>Tinkering Embedded</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-02-09T15:13:36+07:00</updated>
+    <updated>2024-02-09T18:06:44+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -60,10 +60,10 @@
         <link href="https://rosmianto.com/this-is-an-example-post-for-my-site.html"/>
         <id>https://rosmianto.com/this-is-an-example-post-for-my-site.html</id>
 
-        <updated>2024-02-08T22:13:59+07:00</updated>
+        <updated>2024-02-09T18:06:44+07:00</updated>
             <summary>
                 <![CDATA[
-                    Nothing fancy, really. It's just a humble post. Published via Publii.
+                    Nothing fancy, really. It's just a humble post. Published via Publii. Another line is added.
                 ]]>
             </summary>
         <content type="html">
@@ -71,6 +71,7 @@
                 <p>Nothing fancy, really.</p>
 <p>It's just a humble post.</p>
 <p>Published via Publii.</p>
+<p>Another line is added.</p>
             ]]>
         </content>
     </entry>
