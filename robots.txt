@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://rosmianto.github.io/sitemap.xml
+Sitemap: https://rosmianto.com/sitemap.xml
