@@ -3,7 +3,7 @@
     <title>Tinkering Embedded</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-02-10T10:05:50+07:00</updated>
+    <updated>2024-02-10T10:15:32+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://rosmianto.com/the-reality-of-learning-embedded.html"/>
         <id>https://rosmianto.com/the-reality-of-learning-embedded.html</id>
 
-        <updated>2024-02-10T10:05:50+07:00</updated>
+        <updated>2024-02-10T10:15:32+07:00</updated>
             <summary>
                 <![CDATA[
                     There's a big gap in embedded world. I observed that your experience in embedded is either: Group #1, enjoying their craft with Arduino, but not realizing that there are a whole world beyond Arduino. Group #2, too busy even to guide #1. They are in&hellip;
@@ -64,14 +64,18 @@
 <p>He wasn't aware that ESP32 has multiple core, and he wasn't even aware the framework provides xTaskCreate() to make tasks.</p>
 <h2>I Want to Help</h2>
 <p>There are definitely issues there, and instead of swimming by themselves to veteran island. I want to build a small ship to help noob island inhabitants cross the sea, and land safely at the veteran island.</p>
-<p>I know, it's just a small dream, but I believe noob island inhabitants also deserve a better experience, better network, better friends, that they can find in veteran island.</p>
+<p>I know, it's just a small dream, but I believe noob island inhabitants also deserve a better experience, better network, better friends, that they can find in veteran island. I believe I have to build a transportation mode, a ship if you want to call it, to help people cross the sea.</p>
 <h2>My Small Ship</h2>
 <p>Here's my little ship (looks like a boat, for now):</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/3/ship.png" alt="" width="501" height="220" sizes="100vw" srcset="https://rosmianto.com/media/posts/3/responsive/ship-xs.png 300w ,https://rosmianto.com/media/posts/3/responsive/ship-sm.png 480w ,https://rosmianto.com/media/posts/3/responsive/ship-md.png 768w ,https://rosmianto.com/media/posts/3/responsive/ship-lg.png 1024w ,https://rosmianto.com/media/posts/3/responsive/ship-xl.png 1360w ,https://rosmianto.com/media/posts/3/responsive/ship-2xl.png 1600w"></figure>
-<p>Yeah it's a boat, but eventually I want to grow this little boat into a little ship, then a little yacht, and (hopefully) into a cruise ship. Here's what I will do with the ship:</p>
+<p>Yeah okay, it's a boat, but eventually I want to grow this little boat into a little ship, then a little yacht, and (hopefully) into a cruise ship. Here's what I will do with the ship:</p>
 <p>For Noob Island to Veteran Island, I will help you cross the sea with my ship. Probably you will look like this:</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/3/noob-vet.png" alt="" width="2852" height="1000" sizes="100vw" srcset="https://rosmianto.com/media/posts/3/responsive/noob-vet-xs.png 300w ,https://rosmianto.com/media/posts/3/responsive/noob-vet-sm.png 480w ,https://rosmianto.com/media/posts/3/responsive/noob-vet-md.png 768w ,https://rosmianto.com/media/posts/3/responsive/noob-vet-lg.png 1024w ,https://rosmianto.com/media/posts/3/responsive/noob-vet-xl.png 1360w ,https://rosmianto.com/media/posts/3/responsive/noob-vet-2xl.png 1600w"></figure>
 <p>And for Veteran Island to Noob Island, I will bring resources from Veteran Island, such as their Best Practices, their tools, their network, etc.</p>
+<p>Basically I am a ship captain crossing sea back and forth.</p>
+<p>For now, my little ship is a digital product you can buy right now. It's called Professional Firmware Development Guide, where I show you the workflow I used to build professional-grade firmware for my company and clients.</p>
+<p>If you are interested, you can check it out here: <a href="https://fwguide.rosmianto.com" target="_blank" rel="noopener noreferrer">fwguide.rosmianto.com</a></p>
+<p>Your ship captain is signing out. See you later! ⛵</p>
             ]]>
         </content>
     </entry>
