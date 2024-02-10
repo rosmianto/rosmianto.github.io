@@ -3,12 +3,76 @@
     <title>Tinkering Embedded</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-02-09T18:06:44+07:00</updated>
+    <updated>2024-02-10T07:11:31+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
+    <entry>
+        <title>The Reality of Learning Embedded</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/the-reality-of-learning-embedded.html"/>
+        <id>https://rosmianto.com/the-reality-of-learning-embedded.html</id>
+
+        <updated>2024-02-10T07:11:31+07:00</updated>
+            <summary>
+                <![CDATA[
+                    There's a big gap in embedded world. I observed that your experience in embedded is either: Group #1, enjoying their craft with Arduino, but not realizing that there are a whole world beyond Arduino. Group #2, too busy even to guide #1. They are in&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>There's a big gap in embedded world.</p>
+<p>I observed that your experience in embedded is either:</p>
+<ol>
+<li>Beginner. Familiar with Arduino. Nothing more.</li>
+<li>Veteran. You are battle-tested, lots of technical scars embedded (nice pun!) in your face.</li>
+</ol>
+<p>Group #1, enjoying their craft with Arduino, but not realizing that there are a whole world beyond Arduino.</p>
+<p>Group #2, too busy even to guide #1. They are in high demand, and they seemed to be always working on something.</p>
+<p>If I draw those two groups, maybe it looked like this:</p>
+<figure class="post__image"><img loading="lazy"  src="https://rosmianto.com/media/posts/3/Untitled.png" alt="" width="3494" height="1000" sizes="100vw" srcset="https://rosmianto.com/media/posts/3/responsive/Untitled-xs.png 300w ,https://rosmianto.com/media/posts/3/responsive/Untitled-sm.png 480w ,https://rosmianto.com/media/posts/3/responsive/Untitled-md.png 768w ,https://rosmianto.com/media/posts/3/responsive/Untitled-lg.png 1024w ,https://rosmianto.com/media/posts/3/responsive/Untitled-xl.png 1360w ,https://rosmianto.com/media/posts/3/responsive/Untitled-2xl.png 1600w"></figure>
+<p>They live in a different island. They have different activity and rules.</p>
+<p>Me myself, just stranded to the veteran island, so I know how it feels to live in both islands.</p>
+<p>The problem is, I got there by swimming, forcing myself to move the hard way. But something I know for sure is swimming isn't for everybody.</p>
+<p>Being a noob is both easy and difficult:</p>
+<ul>
+<li>Easy because you have lots of tutorials for beginner</li>
+<li>Difficult because you have lots of tutorials for beginner</li>
+</ul>
+<p>You see the irony? Tutorials have been a blessing and a curse.</p>
+<h2>The Issue With Tutorials</h2>
+<p>I'm pretty sure you have followed a tutorial at some point in your embedded career. What you usually find?</p>
+<p>Prepare the breadboard 👉 follow the wiring connection 👉 copy the example code 👉 build and flash. Voila!</p>
+<p>Yes, there's some explanations (like Adafruit and Sparkfun tutorials, they're great!), but the nature of tutorial is to <em>guide you do something really specific </em>(like blinking LEDs or reading sensor), nothing more.</p>
+<p>Problem arise when you want to level up your game. You might search for more advanced tutorials, like "how to use FreeRTOS", and fortunately you can get that tutorial.</p>
+<p>You then search for even more advanced topic like "how to set correct FreeRTOS priority values", no tutorials.</p>
+<p>You search "how to make performant multiple FreeRTOS tasks", you ended up with multiple sources, a bit here, a bit there. There's no single tutorials that explains all.</p>
+<p>Yes, that's the reality when you leave that noob island.</p>
+<p>You need to understand multiple concepts at once to understand FreeRTOS priority values.</p>
+<p>You need to understand multiple concepts at once to make performant FreeRTOS tasks.</p>
+<p>It's like Googling "how to build website like Facebook" and gets frustrated.</p>
+<p>Building Facebook isn't a tutorial bruh.</p>
+<h2>Noob Island Inhabitants</h2>
+<p>They don't have tutorials for advanced topics so they do what they can. They make sub-par work, even though they use many advanced concepts. I've seen it with my own eye!</p>
+<p>For example, I've seen a junior engineer wanted to run multiple tasks in parallel using ESP32. Instead of using the good ol' FreeRTOS tasks, he used some random library on the internet, acting as a scheduler, and throw code into the scheduler.</p>
+<p>Well, to be fair, the code is working btw.</p>
+<p>BUT IT STUTTERS, LIKE A LOT!</p>
+<p>He wasn't aware that ESP32 has multiple core, and he wasn't even aware the framework provides xTaskCreate() to make tasks.</p>
+<h2>I Want to Help</h2>
+<p>There are definitely issues there, and instead of swimming by themselves to veteran island. I want to build a small ship to help noob island inhabitants cross the sea, and land safely at the veteran island.</p>
+<p>I know, it's just a small dream, but I believe noob island inhabitants also deserve a better experience, better network, better friends, that they can find in veteran island.</p>
+<h2>My Small Ship</h2>
+<p>Here's my little ship (looks like a boat, for now):</p>
+<figure class="post__image align-center"><img loading="lazy"  src="https://rosmianto.com/media/posts/3/ship.png" alt="" width="501" height="220" sizes="100vw" srcset="https://rosmianto.com/media/posts/3/responsive/ship-xs.png 300w ,https://rosmianto.com/media/posts/3/responsive/ship-sm.png 480w ,https://rosmianto.com/media/posts/3/responsive/ship-md.png 768w ,https://rosmianto.com/media/posts/3/responsive/ship-lg.png 1024w ,https://rosmianto.com/media/posts/3/responsive/ship-xl.png 1360w ,https://rosmianto.com/media/posts/3/responsive/ship-2xl.png 1600w"></figure>
+<p>Yeah it's a boat, but eventually I want to grow this little boat into a little ship, then a little yacht, and (hopefully) into a cruise ship.</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>The Friday Firmware Newsletter</title>
         <author>
