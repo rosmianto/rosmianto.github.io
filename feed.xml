@@ -3,12 +3,88 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-02-10T10:35:25+07:00</updated>
+    <updated>2024-02-11T13:02:34+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
+    <entry>
+        <title>Yes, You Can Use Arduino for Commercial-grade, Only If You Do This</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/yes-you-can-use-arduino-for-commercial-grade-only-if-you-do-this.html"/>
+        <id>https://rosmianto.com/yes-you-can-use-arduino-for-commercial-grade-only-if-you-do-this.html</id>
+
+        <updated>2024-02-11T13:02:34+07:00</updated>
+            <summary>
+                <![CDATA[
+                    I need to reimphasize this: Yes, Arduino is a toy. And by a toy, I mean Scratch-the-programming-language toy. Arduino is the Scratch of embedded world. But can you use Arduino for industrial or commercial-grade projects? The answer is also YES. Before we continue, I need&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I need to reimphasize this:</p>
+<p><em>Yes, Arduino is <strong>a toy</strong>. And by a toy, I mean Scratch-the-programming-language toy. Arduino is the Scratch of embedded world.</em></p>
+<p>But can you use Arduino for industrial or commercial-grade projects?</p>
+<p>The answer is also YES.</p>
+<p>Before we continue, I need to make sure that Arduino can refer to many things:</p>
+<ul>
+<li>Arduino Boards (UNO, Nano, Micro, etc.)</li>
+<li>Arduino IDE (The program you use to type code and upload code)</li>
+<li>Arduino Framework (The entire embedded software libraries so you can use <code>Serial.begin()</code>, <code>millis()</code>, <code>delay()</code>, etc.)</li>
+<li>Arduino Community (forum.arduino.cc)</li>
+</ul>
+<p>In this article, we're going to refer Arduino as the Boards and Framework.</p>
+<h2>Why Did People Think Arduino is a Toy?</h2>
+<p>Because like any other toys, Arduino does:</p>
+<ul>
+<li>Simplify a lot of things</li>
+<li>Is cheap enough</li>
+<li>Is easy enough to get started with</li>
+</ul>
+<p>Arduino literally has lowered the barrier to entry embedded world. Before this, you have to use complicated boards (do you know BASIC Stamp?) with <em>weird </em>setup and boring documentation.</p>
+<p>From there, Arduino has been associated with fun and cool projects, sometimes even a literal kid was teaching us to explore Arduino (remember Super-Awesome Sylvia?), no wonder if people start thinking Arduino == Toy.</p>
+<p>And you must understand, that ironically, Arduino isn't aimed for embedded engineers.</p>
+<h2>Arduino Is Aimed for This Market Segment</h2>
+<p>Arduino is designed to be used by hobbyists and artists. People with no embedded background. So those people can make interactive art projects without much knowing technical stuff.</p>
+<p>Yes, I know that Arduino is now expanding their business and try to capture industrial IoT (with Arduino PRO series). But for the majority of their market, it's still hobbyists.</p>
+<p>Fortunately, Arduino as a board is just another embedded board, just like STM32 Development Board. Which is perfect for embedded engineers to use for many applications, including industrial/commercial projects.</p>
+<h2>You Can Use Arduino If You Only Do This</h2>
+<p>By treating Arduino just like other embedded tools.</p>
+<p>What does that mean? Arduino, in its core, is just an microcontroller chip with some external components. So you can use it safely by:</p>
+<ol>
+<li>Enforcing high-standard embedded environments</li>
+<li>Insanely good coding standard</li>
+<li>Superb firmware architecture design (this one is very important)</li>
+<li>Understanding the hardware limitation</li>
+<li>Thorough testing and certification process</li>
+</ol>
+<p>In fact, Arduino UNO contains ATMega328P. That microcontroller is actually a commercial-ready chip. So don't worry. Atmel (now Microchip) even provides automotive-grade chip of ATMega328P. Do you still think it's a <strong>toy</strong>?</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/5/Screenshot-2024-02-11-at-12.47.28.png" alt="ATMega328P is available with the automotive-grade variant" width="1828" height="520" sizes="100vw" srcset="https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-xs.png 300w ,https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-sm.png 480w ,https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-md.png 768w ,https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-lg.png 1024w ,https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-xl.png 1360w ,https://rosmianto.com/media/posts/5/responsive/Screenshot-2024-02-11-at-12.47.28-2xl.png 1600w"></figure>
+<figcaption >You can get automotive-grade variant of ATMega328P</figcaption>
+</figure>
+<h2>Okay, What About Arduino Framework? It's Sub-Standard.</h2>
+<p>Yes Arduino Framework simplifies lots of things. But saying it as sub-standard software is an insult.</p>
+<p>Treat Arduino Framework like CMSIS or mbed framework. Problem's solved.</p>
+<p>In fact, Arduino and countless libraries have been used, tested, reported, and fixed by hundreds or thousands engineers around the world. Ditching Arduino Framework to favor your own in-house solution is like ditching AES-128 algorithm to make your own cryptographic algorithm. It's a bad idea.</p>
+<p>Now, to make Arduino framework more polished, do these:</p>
+<ol>
+<li>Ditch Arduino IDE and switch to VSCode + PlatformIO</li>
+<li>Start separating your code into logical module. We call this modular programming</li>
+<li>Use useful C and C++ features (like classes, virtual function, polymorphism, or even std::function if you feel fancy today)</li>
+<li>Write proper unit-tests and do proper testing process</li>
+<li>Use static analyzer and advanced linter</li>
+<li>Lastly, you have to learn how a professional, industrial, commercial-grade firmware are being done.</li>
+</ol>
+<p>That's all you need to do to use Arduino for serious applications.</p>
+<p>For the Point 6, if you are interested developing a better firmware, I made a paid guide where I show you the exact workflow I use to build firmware for my company and my freelance clients. Check it out here: <a href="https://fwguide.rosmianto.com?utm_source=rosmianto.com&amp;utm_medium=post" target="_blank" rel="noopener noreferrer">fwguide.rosmianto.com</a></p>
+<p> </p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>The Reality of Learning Embedded</title>
         <author>
