@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-02-11T13:03:42+07:00</updated>
+    <updated>2024-02-11T13:12:38+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://rosmianto.com/yes-you-can-use-arduino-for-commercial-grade-only-if-you-do-this.html</id>
             <category term="Embedded Productivity"/>
 
-        <updated>2024-02-11T13:03:42+07:00</updated>
+        <updated>2024-02-11T13:12:38+07:00</updated>
             <summary>
                 <![CDATA[
                     I need to reimphasize this: Yes, Arduino is a toy. And by a toy, I mean Scratch-the-programming-language toy. Arduino is the Scratch of embedded world. But can you use Arduino for industrial or commercial-grade projects? The answer is also YES. Before we continue, I need&hellip;
