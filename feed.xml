@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-19T12:57:36+07:00</updated>
+    <updated>2024-03-19T13:14:02+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/13/fwguide-2.webp" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-03-18T21:56:41+07:00</updated>
+        <updated>2024-03-19T13:14:02+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/13/fwguide-2.webp" alt="" />
@@ -38,7 +38,7 @@
 <p>The unsure feeling you have can be eliminated (or at least reduced) when you know everything about the firmware you develop, this is including:</p>
 <ol>
 <li>how each module interacts with the others</li>
-<li>how each module have been tested</li>
+<li>how each module has been tested</li>
 <li>how each module is written</li>
 </ol>
 <p>That's why I call my method as <strong>3D Method: Draw, Dissect, Detect</strong>.</p>
