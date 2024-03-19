@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-19T12:33:39+07:00</updated>
+    <updated>2024-03-19T12:57:36+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -84,7 +84,7 @@
         <media:content url="https://rosmianto.com/media/posts/12/git-history-white.png" medium="image" />
             <category term="Embedded Tips"/>
 
-        <updated>2024-03-19T12:33:39+07:00</updated>
+        <updated>2024-03-19T12:57:36+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/12/git-history-white.png" alt="" />
@@ -143,7 +143,6 @@
 <p>Upon further inspection, I noticed that the bug appeared when I added a new FreeRTOS task. The problem was I didn't properly terminate the task using vTaskDelete().</p>
 <p>Cannot show the code because it's super secret. I later added the vTaskDelete(NULL) and the problem is just gone.</p>
 <p>Happy day! Sometimes life forces you to apply what you preach. 😀</p>
-<p> </p>
             ]]>
         </content>
     </entry>
