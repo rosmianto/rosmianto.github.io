@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-20T16:07:42+07:00</updated>
+    <updated>2024-03-21T05:39:35+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -239,16 +239,19 @@
         </author>
         <link href="https://rosmianto.com/how-to-do-freelancing-as-an-embedded-engineer.html"/>
         <id>https://rosmianto.com/how-to-do-freelancing-as-an-embedded-engineer.html</id>
+        <media:content url="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" medium="image" />
             <category term="Embedded Freelancing"/>
 
-        <updated>2024-03-10T11:12:31+07:00</updated>
+        <updated>2024-03-21T05:39:35+07:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" alt="" />
                     Freelance is a wonderful world: It offers lots of freedom and flexibility. But, given those pluses, freelance is also hard. Because instead of just do the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <p>Freelance is a wonderful world:</p>
 <ul>
 <li>You get to choose who you work with.</li>
@@ -259,7 +262,7 @@
 <p>But, given those pluses, freelance is also hard. Because instead of just do the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get clients.</p>
 <p>But again, the pluses far outweight the minuses. No wonder if freelancing is soo seductive for many talented engineers. It's too sexy to ignore. You should not quit your main job if you have zero knowledge of freelance world.</p>
 <p>That's too risky.</p>
-<p>Now, to be a freelance embedded engineer, I need to assess your profile first.</p>
+<p>Now, to be a freelance embedded engineer, you need to assess your profile first.</p>
 <p>I will be using my 3-check criteria to check your readiness:</p>
 <ol>
 <li>2 years of experience minimum</li>
