@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-21T05:39:35+07:00</updated>
+    <updated>2024-03-21T06:25:50+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -242,11 +242,11 @@
         <media:content url="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" medium="image" />
             <category term="Embedded Freelancing"/>
 
-        <updated>2024-03-21T05:39:35+07:00</updated>
+        <updated>2024-03-21T06:25:50+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" alt="" />
-                    Freelance is a wonderful world: It offers lots of freedom and flexibility. But, given those pluses, freelance is also hard. Because instead of just do the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get&hellip;
+                    Freelance is a wonderful world: It offers lots of freedom and flexibility. But, given those pluses, freelance is also hard. Because instead of just doing the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -259,9 +259,9 @@
 <li>You get to choose how much you are getting paid.</li>
 </ul>
 <p>It offers lots of freedom and flexibility.</p>
-<p>But, given those pluses, freelance is also hard. Because instead of just do the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get clients.</p>
-<p>But again, the pluses far outweight the minuses. No wonder if freelancing is soo seductive for many talented engineers. It's too sexy to ignore. You should not quit your main job if you have zero knowledge of freelance world.</p>
-<p>That's too risky.</p>
+<p>But, given those pluses, freelance is also hard. Because instead of just doing the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get clients.</p>
+<p>But again, the pluses far outweigh the minuses. No wonder freelancing is so seductive for many talented engineers. It's too sexy to ignore. You should not quit your main job if you have zero knowledge of the freelance world.</p>
+<p>That's too risky. Instead, do freelance on the side, and slowly transition from full-time employee to full-time freelancer (if you want to. I have friends who prefer part-time freelance indefinitely).</p>
 <p>Now, to be a freelance embedded engineer, you need to assess your profile first.</p>
 <p>I will be using my 3-check criteria to check your readiness:</p>
 <ol>
@@ -271,24 +271,25 @@
 </ol>
 <p>Let's dissect them one by one.</p>
 <h3>1. Two Years of Experience Minimum</h3>
-<p>2 years minimum is subjective criteria, actually. But it helps me to see if someone has enough exposure to corporate world.</p>
-<p>Less than 2-years usually an engineer still don't know the full cycle of embedded project development. They never shipped a product, never tested device on the field, never knew how to handle business pressure to technical development.</p>
-<p>If you have less than 2, you still can be a freelancer, but I'm afraid you will not survive and left negative views of freelance world.</p>
+<p>2 years minimum is a subjective criterion, actually. But it helps me to see if someone has enough exposure to the corporate world.</p>
+<p>Less than 2 years usually an engineer still doesn't know the full cycle of embedded project development. They never shipped a product, never tested device on the field, never knew how to handle business pressure to technical development.</p>
+<p>If you have less than 2, you still can be a freelancer, but I'm afraid you will not survive and leave negative views of freelance world.</p>
+<p>Remember, embedded freelancing is different with other types of freelance like video editing, translation, voice over. There are specific knowledge and skills required to survive it.</p>
 <h3>2. 10+ Hours/week To Spare</h3>
-<p>Now, accepting freelance project means you work outside your main job. And the great part of freelance is, you have the freedom to set your schedule. You just need to make sure your clients kept updated every week.</p>
-<p>In my experience, 10 hours a week at minimum is a sweet-spot to make a significant project progress. Less than that usually you can only do minor work. And most clients also have time constraint.</p>
-<p>Because I say 10 hours a week, that means you can work 2 hours on Monday, 2 hours Tuesday, and 6 hours on Saturday. Or..</p>
+<p>Now, accepting freelance projects means you work outside your main job. And the great part of freelance is, you have the freedom to set your schedule. You just need to make sure your clients are kept updated every week.</p>
+<p>In my experience, 10 hours a week at minimum is a sweet spot to make a significant project progress. Less than that usually you can only do minor work. And most clients also have time constraints.</p>
+<p>Because I say 10 hours a week, that means you can work 2 hours on Monday, 2 hours on Tuesday, and 6 hours on Saturday. Or..</p>
 <p>5 hours on Saturday, 5 hours on Sunday. You get the idea. You pick yourself.</p>
 <p>Make sure you send the progress update to your clients every week.</p>
-<h3>3. Self-Discliplined and Autonomous</h3>
-<p>Lastly, you have to have those 2 traits: self-discliplined and autonomous.</p>
+<h3>3. Self-Discipline and Autonomous</h3>
+<p>Lastly, you have to have those 2 traits: self-disciplined and autonomous.</p>
 <p>If you need to constantly be told what to do, what next, how to do it. Ahh, forget freelancing. It won't suit your style.</p>
-<p>Because in reality, freelancing requires lots of disclipline, because your clients don't know what you should do. That's why they hired you as a freelancer.</p>
+<p>Because in reality, freelancing requires lots of discipline, because your clients don't know what you should do. That's why they hired you as a freelancer.</p>
 <p>They don't have the bandwidth to check your work every hour.</p>
-<p>They only have the money to pay your work.</p>
-<p>In my experience, someone who has these traits are usually a senior engineer.</p>
+<p>They only have the money to pay for your work.</p>
+<p>In my experience, someone who has these traits is usually a senior engineer.</p>
 <h2>How to Land Freelance Clients</h2>
-<p>Now, if you passed those 3-check criteria, you are ready to get clients. My method below is for long-term </p>
+<p>Now, if you pass those 3-check criteria, you are ready to get clients. My method below is for long-term </p>
 <p>Follow my 3-step framework to get clients:</p>
 <p>👉 Set your expertise. What projects do you want to do? Robotics? IoT? Firmware Development?</p>
 <p>👉 “Attract” not “hunt” clients. Do that by showing your expertise through posts on LinkedIn.</p>
