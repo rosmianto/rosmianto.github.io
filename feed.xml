@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-20T09:30:32+07:00</updated>
+    <updated>2024-03-20T16:07:42+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/15/100projects-2.jpeg" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-03-20T09:30:32+07:00</updated>
+        <updated>2024-03-20T16:07:42+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/15/100projects-2.jpeg" alt="" />
@@ -82,6 +82,15 @@
 <p>Even better, keep breaking rules in embedded systems to see how far you can abuse the project. Pick bad variable name, create 10000 lines main.cpp, try to overflow buffer. What happens if you don't draw diagram first.</p>
 <p>You will learn something. And you will learn why such things are considered bad in the first place.</p>
 <p class="msg msg--warning">Ditch the rules in experimental mode. But use all the best practices you know <strong>at work</strong>.</p>
+<h2>Bonus Rule: Prioritize Quantity over Quality</h2>
+<p>Yes, you read it right.</p>
+<p>You should prioritize quantity over quality. Because quality work comes from lots of repetition. How do you think Tiger Woods perfected his swings?</p>
+<p>Don't be too afraid of low-quality side projects, nobody will see them anyway.</p>
+<p>Trust me, the quality will follow later. Focus on quantity first. Let me remind you of this quote:</p>
+<blockquote>
+<p>90% of everything is crap</p>
+<p>Sturgeon's law</p>
+</blockquote>
 <p><!-- notionvc: 9aa7c0ef-d8e0-4b26-bec4-22b9b4d2972b --></p>
             ]]>
         </content>
