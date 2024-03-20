@@ -3,14 +3,14 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-20T09:21:19+07:00</updated>
+    <updated>2024-03-20T09:27:04+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
     <entry>
-        <title>2-rule Method for Experimental Projects</title>
+        <title>2-Rule Method for Experimental Projects</title>
         <author>
             <name>Rosmianto A. Saputro</name>
         </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/15/100projects-2.jpeg" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-03-20T09:21:19+07:00</updated>
+        <updated>2024-03-20T09:27:04+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/15/100projects-2.jpeg" alt="" />
@@ -60,7 +60,7 @@
 <p>Lastly, this is probably the best way to reuse your learning folders: by making them as templates.</p>
 <p>That way, you don't even need to worry about various configurations, you just copy and paste. And voila! You have added a new feature.</p>
 <p>For example, in your BLE project before, you already made a BLE profile for Heart rate sensor, next time you need BLE with a heart rate sensor, you could just pull the folder and clone it. It will probably take 5 minutes (instead of redoing the same shit for 45 minutes, big win!).</p>
-<h1>The 4-Rules Method</h1>
+<h1>The 2-Rule Method</h1>
 <p>All the above sounds easy, but to make it effective, there are lots of nuances to understand before you do it.</p>
 <p>I created a 4-Rule Method to help you create experimental projects far more effectively.</p>
 <h2>Rule #1: Aim for 100 Side Projects</h2>
