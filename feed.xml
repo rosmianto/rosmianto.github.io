@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-20T09:27:54+07:00</updated>
+    <updated>2024-03-20T09:30:32+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/15/100projects-2.jpeg" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-03-20T09:27:54+07:00</updated>
+        <updated>2024-03-20T09:30:32+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/15/100projects-2.jpeg" alt="" />
@@ -75,7 +75,7 @@
 <figcaption >Different MCU. Different sensor. Different projects. I'm more freestyle.</figcaption>
 </figure>
 <p>I have plenty of reusable projects in my stash.</p>
-<h1>Rule #2: Ditch best practices</h1>
+<h2>Rule #2: Ditch best practices</h2>
 <p>Except you are experimenting with best practices, please ditch best practices, for now. The goal is to exposure to lots of things, including bad, stupid, dumb practices. You don't learn just from good things, but also from bad things.</p>
 <p>Should you host the project on GitHub? Up to you.</p>
 <p>Should you use Arduino or mbed? I don't know.</p>
