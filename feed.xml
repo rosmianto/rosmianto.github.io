@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-22T06:05:08+07:00</updated>
+    <updated>2024-03-22T16:30:49+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -170,7 +170,7 @@
         <media:content url="https://rosmianto.com/media/posts/12/git-history-white.png" medium="image" />
             <category term="Embedded Tips"/>
 
-        <updated>2024-03-22T06:05:08+07:00</updated>
+        <updated>2024-03-22T16:30:49+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/12/git-history-white.png" alt="" />
@@ -204,6 +204,7 @@
 <p><code>git checkout commit-apr4-hash</code></p>
 <p>You rebuild the project and pufff, the bug is gone!</p>
 <p>At this point, you can reasonably assume that commit-apr5 is causing the problem.</p>
+<p class="msg msg--info">If you have hundreds of commits, this process can tedious. Use <code>git bissect</code> to help you automate the pinpointing process.</p>
 <h1>Find the Root Cause</h1>
 <p>Use git diff to find code changes that caused the issue:</p>
 <p><code>git diff commit-apr5-hash commit-apr4-hash</code></p>
