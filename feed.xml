@@ -3,12 +3,78 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-22T16:36:00+07:00</updated>
+    <updated>2024-03-25T06:16:29+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
+    <entry>
+        <title>Embedded Freelancers, Attract Not Hunt Clients</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/embedded-freelancer-attract-not-hunt-clients.html"/>
+        <id>https://rosmianto.com/embedded-freelancer-attract-not-hunt-clients.html</id>
+        <media:content url="https://rosmianto.com/media/posts/17/sebastian-herrmann-NbtIDoFKGO8-unsplash.jpg" medium="image" />
+            <category term="Embedded Freelancing"/>
+
+        <updated>2024-03-25T06:16:29+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://rosmianto.com/media/posts/17/sebastian-herrmann-NbtIDoFKGO8-unsplash.jpg" alt="" />
+                    I've been doing freelance as an embedded since 2021. and I realize one of the important things: There are simply too many project owners struggling to get freelancers. Yes, you read it right. We need more qualified embedded freelancers. Many project owners send me DM&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://rosmianto.com/media/posts/17/sebastian-herrmann-NbtIDoFKGO8-unsplash.jpg" class="type:primaryImage" alt="" /></p>
+                <p>I've been doing freelance as an embedded since 2021.</p>
+<p>and I realize one of the important things:</p>
+<p>There are simply too many project owners struggling to get freelancers. Yes, you read it right. We need more qualified embedded freelancers.</p>
+<p>Many project owners send me DM offering projects, but I have to politely decline because of these 2:</p>
+<ul>
+<li>Their projects industry isn't aligned with my interests</li>
+<li>I can't refer them to anybody because my freelance circle's interests are too similar to mine</li>
+</ul>
+<p>Okay, let's dig deeper into each point.</p>
+<h3>Their projects industry isn't aligned with my interests</h3>
+<p>My primary interests in embedded systems are low-power devices, wearables, portable devices, and things similar to those.</p>
+<p>But sometimes I get this type of DM on LinkedIn:</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/17/Screenshot-2024-03-25-at-05.40.47.png" alt="" width="500" height="152" sizes="100vw" srcset="https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-xs.png 300w ,https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-sm.png 480w ,https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-md.png 768w ,https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-lg.png 1024w ,https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-xl.png 1360w ,https://rosmianto.com/media/posts/17/responsive/Screenshot-2024-03-25-at-05.40.47-2xl.png 1600w"></figure>I have zero clue about what DC001 is.</p>
+<p>Apparently it is a protocol for high voltage charging (like 48v to 72v high).</p>
+<p>Another potential client asked me to work on his automotive project, my task will be ensuring the system compliance with regulations and standards.</p>
+<p>"I'm sorry man, but I know nothing about regulations," I said to him.</p>
+<p>"Ah, no worries mate. Know anyone who qualified?" He asked me.</p>
+<p>"Uhhm, I'm afraid I don't know anyone suitable. Really sorry"</p>
+<p>"Oh very unfortunate, thanks mate!"</p>
+<p>Okay, you might ask. Why would a client with an automotive project approach me?</p>
+<p>Well, the answer is very obvious. He doesn't know anybody else! Notice his question above.</p>
+<h3>I Can't Refer Them</h3>
+<p>"You're hanging out with folks similar to yours". Yes, I couldn't agree more.</p>
+<p>My circle of friends is pretty similar to mine: low-power, portable products, consumer electronics.</p>
+<p>You know, the older you get, the smaller your circle will be. That also happens to my freelance friends. That's why I am active on LinkedIn, to expand my online friends.</p>
+<p>Many followers asked me to refer projects to them, yes I've done that honestly.</p>
+<p>But, how many of them are working with high-voltage embedded projects? Or know a lot about regulations and standards?</p>
+<p>Even if they happen to know, how can I ensure they really know? They don't demonstrate their regulations and standards knowledge on LinkedIn.</p>
+<p>Do you really expect me to refer my client to a random person I found on LinkedIn?</p>
+<p>My reputation would be at stake.</p>
+<p>"Well Rosmianto, you could ask them for their portfolio to assess their skills?"</p>
+<p>Why wouldn't they just post it on their LinkedIn 😂</p>
+<p>I'm not a recruiter. Vetting each person isn't an easy feat.</p>
+<h1>Attract, Not Hunt Your Clients</h1>
+<p>We need more qualified freelancers who actively demonstrate their knowledge.</p>
+<p>You might be an expert, but if nobody knows, how could you land a client?</p>
+<p>If you want to become an embedded freelancer, you want to plan long-term.</p>
+<p>And reverse your question, from "<em>How to get freelance clients?</em>"</p>
+<p>to "<em>How freelance clients easily find me?</em>"</p>
+<p>Flipping that question will also flip your entire approach to acquiring clients.</p>
+<p>You no longer "ask for project", you will start "inviting them to see your profile".</p>
+<p>One of the easiest ways to start attracting clients?</p>
+<p>Start showing off your skills on LinkedIn for 30 days straight.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>2-Rule Method for Experimental Projects</title>
         <author>
