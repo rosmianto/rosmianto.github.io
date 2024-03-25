@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-25T10:12:29+07:00</updated>
+    <updated>2024-03-25T16:10:49+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" medium="image" />
             <category term="Embedded Tips"/>
 
-        <updated>2024-03-25T10:12:29+07:00</updated>
+        <updated>2024-03-25T16:10:49+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" alt="" />
@@ -30,7 +30,7 @@
             <![CDATA[
                     <p><img src="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <div>
-<p>Josh is having a very bad day at work. He is a firmware engineer btw.<br><br>“Wtf? Boss wants 2 more features added to the firmware. Heck, I didn’t even fix my bug yesterday” He complained.<br><br>“Why? Aren’t those 2 features simple to implement?” I asked him.<br><br>“Easier said than done! I need to touch maybe 20 files to do that. I’m afraid the code will break. It’s stressing me out!” He freaked out.<br><br>Here we can see the problem, well 3 problems:<br><br>• Josh is struggling to add more features<br>• Josh needs to touch tens of files to make small modifications<br>• Josh is scared and not confident his work will be stable enough<br><br>Poor Josh. This thing shouldn’t be happening. Adding features shouldn’t be scary. In this week’s newsletter, I’m going to share 2 tips to kill Josh’s problems. But before we go through those tips, a few important notes:</p>
+<p>Josh is having a very bad day at work. He is a firmware engineer btw.<br><br>“Wtf? Boss wants 2 more features added to the firmware. Heck, I didn’t even fix my bug yesterday” He complained.<br><br>“Why? Aren’t those 2 features simple to implement?” I asked him.<br><br>“Easier said than done! I need to touch maybe 20 files to do that. I’m afraid the code will break. It’s stressing me out!” He freaked out.<br><br>Here we can see the problem, well 3 problems:<br><br>• Josh is struggling to add more features<br>• Josh needs to touch tens of files to make small modifications<br>• Josh is scared and not confident his work will be stable enough<br><br>Poor Josh. This thing shouldn’t be happening. Adding features shouldn’t be scary. In this article, I’m going to share 2 tips to kill Josh’s problems. But before we go through those tips, a few important notes:</p>
 </div>
 <div>
 <ul>
