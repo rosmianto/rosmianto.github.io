@@ -3,12 +3,219 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-25T09:20:35+07:00</updated>
+    <updated>2024-03-25T10:12:29+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
+    <entry>
+        <title>2 Tips for Improving Your Firmware</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/2-tips-for-improving-your-firmware.html"/>
+        <id>https://rosmianto.com/2-tips-for-improving-your-firmware.html</id>
+        <media:content url="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" medium="image" />
+            <category term="Embedded Tips"/>
+
+        <updated>2024-03-25T10:12:29+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" alt="" />
+                    Josh is having a very bad day at work. He is a firmware engineer btw. “Wtf? Boss wants 2 more features added to the firmware. Heck, I didn’t even fix my bug yesterday” He complained. “Why? Aren’t those 2 features simple to implement?” I asked&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://rosmianto.com/media/posts/19/c-m-iVfOFaEghqU-unsplash.jpg" class="type:primaryImage" alt="" /></p>
+                <div>
+<p>Josh is having a very bad day at work. He is a firmware engineer btw.<br><br>“Wtf? Boss wants 2 more features added to the firmware. Heck, I didn’t even fix my bug yesterday” He complained.<br><br>“Why? Aren’t those 2 features simple to implement?” I asked him.<br><br>“Easier said than done! I need to touch maybe 20 files to do that. I’m afraid the code will break. It’s stressing me out!” He freaked out.<br><br>Here we can see the problem, well 3 problems:<br><br>• Josh is struggling to add more features<br>• Josh needs to touch tens of files to make small modifications<br>• Josh is scared and not confident his work will be stable enough<br><br>Poor Josh. This thing shouldn’t be happening. Adding features shouldn’t be scary. In this week’s newsletter, I’m going to share 2 tips to kill Josh’s problems. But before we go through those tips, a few important notes:</p>
+</div>
+<div>
+<ul>
+<li>
+<p>Improving your firmware means you need to improve your thinking. Because writing firmware is basically thinking in code</p>
+</li>
+<li>
+<p>If you have too much hassle developing firmware, it means you need to either automate something or try another approach. Adding features should be straightforward (although not always easy, mind you)</p>
+</li>
+</ul>
+</div>
+<div>
+<h2>Code Bloat → Kill with Method Extraction</h2>
+</div>
+<div>
+<p>Now, when Josh needed to add/change something, he had to modify his code in many locations. The code is similar (or even exactly the same), and he needed to use Ctrl+F to find everything.</p>
+</div>
+<div>
+<p>This issue is called code duplication or code bloats. The solution is by extracting that similar code and create a function with appropriate parameters. For example, Josh has 2 similar code everywhere:</p>
+</div>
+<div>
+<pre><code>// First code block
+uint8_t payload[255] = ....;
+
+uint8_t checksum = 0;
+for (int i = 0; i &lt; 255; i++) {
+    // Long code here..
+    checksum = ....;
+}</code></pre>
+</div>
+<div>
+<pre><code>// Second code block
+uint8_t payload[255] = ....;
+
+uint8_t checksum = 0;
+for (int i = 0; i &lt; 254; i++) {
+    // Long code here..
+    checksum = ....;
+}</code></pre>
+</div>
+<div>
+<p>Did you notice the difference between 1st vs 2nd code block?</p>
+</div>
+<div>
+<p>Second block has 254, first block instead has 255. When I asked Josh, he said that the second block for some reason needs to exclude the last byte to calculate the checksum (Wtf Josh, that is dangerous!)</p>
+</div>
+<div>
+<p>Now, those two blocks can be extracted and written into a single function:</p>
+</div>
+<div>
+<pre><code>uint8_t calculateChecksum(uint8_t* payload, bool excludeLastByte) {
+    
+    uint8_t checksum = 0;
+    uint8_t payloadSize = excludeLastByte ? 254 : 255;
+    // Long code here...
+}</code></pre>
+</div>
+<div>
+<p>From there, we can calculate checksum simply by calling <code>calculateChecksum(payload, true)</code>.</p>
+</div>
+<div>
+<h2>Insecure of Code Stability → Kill with Unit Test</h2>
+</div>
+<div>
+<p>We have reduced code bloats into a single function. And this gives us one more benefit: we can test it individually. By using unit test, we can ensure that the code is consistent and outputs the correct value as we expect.</p>
+</div>
+<div>
+<p>Unit testing is basically calling <code>calculateChecksum()</code> with known payload, we compare the actual checksum with the expected value. If they match, we’re fine.</p>
+</div>
+<div>
+<p>Remember that unit testing doesn’t necessarily use any testing framework like Catch2, Google Test. As long as you can verify the output, you’re doing unit tests (However, manual testing is painful as the code grows, that’s why we use testing framework, to do <strong><i>automated</i></strong><strong> </strong>unit testing)</p>
+</div>
+<div>
+<h2>Summary</h2>
+</div>
+<div>
+<p>Use those 2 tips, and you will be better at dealing with code redundancy and feel confident in your firmware. If you want to explore more about this concept, we have plenty: Test-Driven Development (TDD), Modular programming, Assertion, etc.</p>
+</div>
+<div>
+<p>Those topics are actually interconnected, so take your time to learn them all.</p>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>3 Essential Skills To Survive Embedded Career</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/3-essential-skills-to-survive-embedded-career.html"/>
+        <id>https://rosmianto.com/3-essential-skills-to-survive-embedded-career.html</id>
+        <media:content url="https://rosmianto.com/media/posts/18/venn.png" medium="image" />
+            <category term="Embedded Career"/>
+
+        <updated>2024-03-25T09:45:24+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://rosmianto.com/media/posts/18/venn.png" alt="" />
+                    Bob is an embedded software engineer, he thinks that writing well-crafted software is all he needs, so he learns and practices: Clean and beautiful software architecture Best design patterns and each use case Algorithms for many problems While his software is beautiful and readable, he&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://rosmianto.com/media/posts/18/venn.png" class="type:primaryImage" alt="" /></p>
+                <div>
+<p>Bob is an embedded software engineer, he thinks that writing well-crafted software is all he needs, so he learns and practices:</p>
+</div>
+<div>
+<ul>
+<li>
+<p>Clean and beautiful software architecture</p>
+</li>
+<li>
+<p>Best design patterns and each use case</p>
+</li>
+<li>
+<p>Algorithms for many problems</p>
+</li>
+</ul>
+</div>
+<div>
+<p>While his software is beautiful and readable, he is also:</p>
+</div>
+<div>
+<ul>
+<li>
+<p>Struggling to bring up a new development board his boss asked 2 weeks ago</p>
+</li>
+<li>
+<p>Confused why the device he is working on cannot last long, even with a 10000mAh battery</p>
+</li>
+<li>
+<p>Angry when the sensor is outputting messy data that breaks his algorithm</p>
+</li>
+</ul>
+</div>
+<div>
+<p>Bob is a good and disciplined engineer, but his boss needs to hire Arjun, another embedded engineer to back him up.</p>
+</div>
+<div>
+<p>Arjun believes that embedded software ≠ computer software. Because embedded systems are a combination of hardware and software, he thinks that you need to understand electronics and software engineering to make things happen, fast (he’s right, you know).</p>
+</div>
+<div>
+<p>But because he has weak software skills, the firmware he wrote is hard to maintain and unreadable. Arjun needs to consult a lot to Bob about modular firmware design, and coding best practices.</p>
+</div>
+<div>
+<div>
+<blockquote>
+<p><i>Yeah, I solved the dev board and the battery issue. The messy output from sensor is because of unstable Vref and incorrect instrumentation op-amp choice. Bob sucks, I love working with him though.</i></p>
+<p><span style="font-size: 0.790123em; font-family: var(--font-serif); color: var(--text-primary-color); font-weight: var(--font-weight-normal);">Arjun</span></p>
+</blockquote>
+</div>
+</div>
+<div>
+<div>
+<blockquote>
+<p><i>Arjun’s code is a mess. We’re best friends now.</i></p>
+<p><span style="font-size: 0.790123em; font-family: var(--font-serif); color: var(--text-primary-color); font-weight: var(--font-weight-normal);">Bob</span></p>
+</blockquote>
+</div>
+</div>
+<div>
+<p>Now, while the story (and the quotes above) is 100% fabricated, I have seen and heard many similar stories: engineers struggle to move forward because of lack of basic understanding of electronics and software design.</p>
+</div>
+<div>
+<p>To successfully work on Embedded Systems, you actually need 3 main skills:</p>
+<p>👉 Computer Science<br>👉 Electrical Engineering<br>👉 A third field depending on your interest</p>
+</div>
+<div>
+<p>Take a look at this interesting diagram:</p>
+<p> </p>
+</div>
+<div><figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/18/venn.avif" alt="" width="434" height="410"></figure></div>
+<div>
+<p>We need CS because there are programming aspects in Embedded Systems. We have to create robust, and efficient code for the device. Bob is the best example of this.<br><br>We need EE because we will be interfacing with electronic devices like sensors and actuators (thanks Arjun for solving the op-amp problem!).<br><br>Understanding the electronics under the hoods will make your life as an embedded engineer easy.<br><br>Lastly, we need a third field. It means that if we work on embedded devices on vehicles then we need to learn and understand automotive: its standards, the rules, the principles in auto.<br><br>The same with other fields.<br><br>I used to work in mining and marine, so I need to learn and understand how mining processes are done, how harsh the environment is, etc.</p>
+</div>
+<div>
+<p>If we become just either Bob or Arjun, we are crippled.</p>
+</div>
+<div>
+<p>If we become both Bob and Arjun, we are unstoppable.</p>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Embedded Freelancers, Attract Not Hunt Clients</title>
         <author>
