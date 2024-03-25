@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-03-25T06:16:29+07:00</updated>
+    <updated>2024-03-25T09:20:35+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -448,8 +448,9 @@
         </author>
         <link href="https://rosmianto.com/the-reality-of-learning-embedded.html"/>
         <id>https://rosmianto.com/the-reality-of-learning-embedded.html</id>
+            <category term="Embedded Career"/>
 
-        <updated>2024-03-18T21:57:36+07:00</updated>
+        <updated>2024-03-25T09:20:35+07:00</updated>
             <summary>
                 <![CDATA[
                     There's a big gap in embedded world. I observed that your experience in embedded is either: Group #1, enjoying their craft with Arduino, but not realizing that there are a whole world beyond Arduino. Group #2, too busy even to guide #1. They are in&hellip;
