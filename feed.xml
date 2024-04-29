@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-04-29T13:58:15+07:00</updated>
+    <updated>2024-04-29T21:35:21+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,19 +19,19 @@
         <media:content url="https://rosmianto.com/media/posts/22/hunter-haley-s8OO2-t-HmQ-unsplash.jpg" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-04-29T13:58:15+07:00</updated>
+        <updated>2024-04-29T21:35:21+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/22/hunter-haley-s8OO2-t-HmQ-unsplash.jpg" alt="" />
-                    The fastest way to 10x your embedded learning progress is by building tons of side projects. I'd say you should aim at least 100 side projects. Don't worry about quality, just build tons of crappy craps. Because your mission isn't build world-class firmware, but to&hellip;
+                    The fastest way to 10x your embedded learning progress is by building tons of side projects. I'd say you should aim for at least 100 side projects. Don't worry about quality, just build tons of crappy craps. Because your mission isn't to build world-class firmware,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://rosmianto.com/media/posts/22/hunter-haley-s8OO2-t-HmQ-unsplash.jpg" class="type:primaryImage" alt="" /></p>
-                <p>The fastest way to 10x your embedded learning progress is by building <a href="https://rosmianto.com/2-rule-method-for-experimental-projects.html" target="_blank" rel="noopener noreferrer">tons of side projects</a>. I'd say you should aim at least 100 side projects.</p>
-<p>Don't worry about quality, just build tons of crappy craps. Because your mission isn't build world-class firmware, but to learn the basics, the nuance, the context of embedded development.</p>
-<p>Now, you might ask "<em>100 is a big number, how the hell I manage to produce that much? What should I build?"</em></p>
+                <p>The fastest way to 10x your embedded learning progress is by building <a href="https://rosmianto.com/2-rule-method-for-experimental-projects.html" target="_blank" rel="noopener noreferrer">tons of side projects</a>. I'd say you should aim for at least 100 side projects.</p>
+<p>Don't worry about quality, just build tons of crappy craps. Because your mission isn't to build world-class firmware, but to learn the basics, the nuance, the context of embedded development.</p>
+<p>Now, you might ask "<em>100 is a big number, how the hell I could produce that much? What should I build?"</em></p>
 <p>Well, first of all. You are absolutely right. 100 projects is <em>plenty</em>. But you don't actually build them in a week. I built them for years, in my spare time.</p>
 <p>And regarding what you should build, here are 3 ways of doing it:</p>
 <ol>
@@ -64,8 +64,8 @@
 <p>Keep doing projects until <strong>Project #100</strong>.</p>
 <p>You see, I build a project based on my previous project. Sometimes I had enough and decided to explore another interest (WiFi), and suddenly I can stack the existing projects (#6 and #7). Making it far more challenging than a simple blinking LED.</p>
 <p>To use Project Stacking Method, you will need to hone your curiosity. Let your curiosity define your path and see what you can do with it.</p>
-<p>Project Stacking Method isn't just for beginner trying to learn basic embedded concepts, it's also applicable for any level, including senior engineers. Though the topics will be very very different.</p>
-<p>For example, senior can do project like "<em>self-healing mesh network using Zigbee</em>". Or "<em>100% heapless C++ firmware development</em>". Or maybe "<em>AI-enabled smart home system where the AI can suggest electric bills optimization by observing usage pattern</em>" (okay I'm getting crazy here, but you got the idea).</p>
+<p>Project Stacking Method isn't just for beginners trying to learn basic embedded concepts, it's also applicable to any level, including senior engineers. Though the topics will be very very different.</p>
+<p>For example, seniors can do project like "<em>self-healing mesh network using Zigbee</em>". Or "<em>100% heapless C++ firmware development</em>". Or maybe "<em>AI-enabled smart home system where the AI can suggest electric bills optimization by observing usage pattern</em>" (okay I'm getting crazy here, but you got the idea).</p>
 <p>I've been doing it for years, and my limitation now is actually time, not ideas. I'm married with one toddler son, so you probably understand how tricky it is to split time to work on side projects.</p>
 <p>But if you have plenty of free time, you should really exploit it before you're getting married haha. 😁</p>
 <p>PS: Send me a DM if you build a project. Probably I can give you my perspectives.</p>
