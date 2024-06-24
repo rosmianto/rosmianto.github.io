@@ -3,12 +3,152 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-05-02T09:09:54+07:00</updated>
+    <updated>2024-06-24T12:06:33+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
+    <entry>
+        <title>6 Strategies for Learning ESP-IDF (without going insane)</title>
+        <author>
+            <name>Rosmianto A. Saputro</name>
+        </author>
+        <link href="https://rosmianto.com/strategies-for-learning-esp-idf-and-not-going-insane.html"/>
+        <id>https://rosmianto.com/strategies-for-learning-esp-idf-and-not-going-insane.html</id>
+        <media:content url="https://rosmianto.com/media/posts/24/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" medium="image" />
+            <category term="Embedded Tips"/>
+
+        <updated>2024-06-24T12:06:33+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://rosmianto.com/media/posts/24/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="" />
+                    If you try to write firmware for ESP32 microcontroller, you will have two popular choices: Arduino is easier. And you probably have good experience with AVR-based Arduino boards (like UNO, Nano, Mega2560, etc.), so writing firmware for ESP32 using Arduino is seamless. You already know&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://rosmianto.com/media/posts/24/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" class="type:primaryImage" alt="" /></p>
+                <p>If you try to write firmware for ESP32 microcontroller, you will have two popular choices:</p>
+<ol>
+<li>Arduino framework</li>
+<li>ESP-IDF</li>
+</ol>
+<p>Arduino is easier. And you probably have good experience with AVR-based Arduino boards (like UNO, Nano, Mega2560, etc.), so writing firmware for ESP32 using Arduino is seamless.</p>
+<p>You already know the basics.</p>
+<p>But because Arduino framework is designed to be simple, lots of concepts are hidden from you. When you work with a slightly more complex project, you will quickly realize that Arduino won't cut it.</p>
+<p>For example, let's say you want to build a BLE scanner using ESP32.</p>
+<p>The goal is simple: to scan nearby BLE devices as fast as possible, if the scanning process is too slow, you will miss some BLE devices. It's often required if you want to track BLE device movements.</p>
+<p>Now, you can scan BLE devices using Arduino framework, yes. But it will be noticeably slower. So, there's no other choice: use ESP-IDF for better performance.</p>
+<p>However, using ESP-IDF is not without downsides. Just take a look at this code comparison below:</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24//Konthen.drawio.png" alt="" width="1000" height="664" sizes="100vw" srcset="https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-xs.png 300w ,https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-sm.png 480w ,https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-md.png 768w ,https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-lg.png 1024w ,https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-xl.png 1360w ,https://rosmianto.com/media/posts/24//responsive/Konthen.drawio-2xl.png 1600w"></figure>
+<figcaption >Left: Arduino code. Right: ESP-IDF example code for ADC</figcaption>
+</figure>
+<p>Both essentially do the same thing: sample analog signal, and printout the value.</p>
+<p>But the right side is hard to follow, especially if you're not familiar with ESP-IDF. There are too many things to unpack here:</p>
+<ul>
+<li>Okay I know ADC. But what's that <em>oneshot</em> thing?</li>
+<li>What ESP_ERROR_CHECK will do?</li>
+<li>Why ADC needs calibration?</li>
+<li>Wait, there are TWO ADCs inside ESP32?</li>
+<li>Why there's so many #include?</li>
+<li>Why it's called vTaskDelay() and not just delay()?</li>
+</ul>
+<p>You see, there are many concepts hidden in Arduino framework. No wonder people said they struggle to learn ESP-IDF.</p>
+<p>So, I will share with you my 6 strategies (plus 1 bonus strategy) to learn ESP-IDF without going insane.</p>
+<h1>Strategy #1: Hone Your C Skill, Especially Function Pointer and Callback</h1>
+<p>ESP-IDF is written in C. It's actually a good thing because as a framework, it should ensure interoperability with many other languages. C is the lowest common denominator for embedded programming.</p>
+<p>ESP-IDF can be sometimes heavy on OOP concepts, and because it's written in C, the framework uses lots of function pointers and callback and pass-by-reference to mimic C++ OOP.</p>
+<p>You can be confused if you don't understand the basics of function pointer and callback in C.</p>
+<h1>Strategy #2: Think in Subsystem, not Linear Thinking</h1>
+<p>I'm sorry for saying jargon.</p>
+<p>Basically by thinking in subsystem, you focus your attention on different parts of the system and how all those parts interact and influence each other.</p>
+<p>Linear thinking is when you think step-by-step, like BASIC or Assembly programming. It's procedural thinking.</p>
+<p>ESP-IDF can sometimes be heavy on event-driven as well. So System thinking will be extremely helpful for you. Now let me give you an example.</p>
+<p>Let's check the ESP-IDF example code for WiFi:</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24/Screenshot-2024-06-23-at-15.33.43.png" alt="" width="1000" height="465" sizes="100vw" srcset="https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-xs.png 300w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-sm.png 480w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-md.png 768w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-lg.png 1024w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-xl.png 1360w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.33.43-2xl.png 1600w"></figure>
+<p>it's just a code to initialize the ESP32 WiFi to act as an Access Point.</p>
+<p>Notice that ugly <code>esp_event_handler_instance_register</code> function?</p>
+<p>It's responsible for adding event handling to the API. Whenever the WiFi state changes (like something connected, or disconnected), the function <code>wifi_event_handler</code> (the callback function) will be called later. And here is the function implementation:</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24/Screenshot-2024-06-23-at-15.37.35.png" alt="" width="1000" height="352" sizes="100vw" srcset="https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-xs.png 300w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-sm.png 480w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-md.png 768w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-lg.png 1024w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-xl.png 1360w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-23-at-15.37.35-2xl.png 1600w"></figure>
+<p>Don't worry about those alien macros and structs yet.</p>
+<p>Now, the question is. When exactly this function will be executed? Like how many seconds after bootup?</p>
+<p>The answer is we don't know. It's the nature of event-driven programming. The function will only be executed only if the WiFi state is changed.</p>
+<p>That's why we can't rely on <strong>l</strong><strong>inear thinking</strong>, because we would be confused as hell. With <strong>system</strong> <strong>thinking</strong>, we will understand that the WiFi event will interact with our <code>wifi_event_handler</code> function <em>later</em>.</p>
+<p>ESP-IDF has an insanely large amount of event-driven programming, especially if you work with WiFi and Bluetooth.</p>
+<p>So, force yourself really hard in system thinking, not procedural/linear thinking.</p>
+<h1>Strategy #3: Use VSCode 'Goto Definition' Feature</h1>
+<p>ESP-IDF encapsulates many data formats and structures inside <code>struct</code>, and sometimes we want to know the full structure of the datatype. Look at this GPIO example code:</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24/Screenshot-2024-06-24-at-11.22.20.png" alt="" width="476" height="314" sizes="100vw" srcset="https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-xs.png 300w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-sm.png 480w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-md.png 768w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-lg.png 1024w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-xl.png 1360w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.22.20-2xl.png 1600w"></figure>
+<p>If I want to know the exact structure of <code>gpio_config_t</code>, I could look it up from the documentation, but that's tedious!</p>
+<p>Instead, I just right-click it and select 'Goto Definition'. It's enough for me to understand the data structure. But if I want more explanation, then I'll go to the official docs.</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24/Screenshot-2024-06-24-at-11.24.22.png" alt="" width="423" height="397" sizes="100vw" srcset="https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-xs.png 300w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-sm.png 480w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-md.png 768w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-lg.png 1024w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-xl.png 1360w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.24.22-2xl.png 1600w"></figure>
+<p>That way, I'll understand the API context much easier and faster.</p>
+<h1>Strategy #4: Go back to the theory!</h1>
+<p>I'll admit, the reason why ESP-IDF seems hard to learn is because <em>it's actually more complex</em>. And by more complex, I mean the framework doesn't hide many details in the code (unlike Arduino framework).</p>
+<p>Even if we open the example code, it still feels overwhelming.</p>
+<p>Remember, ESP-IDF provides <em><strong>example</strong> </em><strong>projects</strong>, not <em><strong>tutorials</strong></em><em>. </em>Mind the difference!</p>
+<p>The goal is to provide as many details as possible, covering many use cases. Not being tutorials, ESP-IDF expects you to be familiar with lots of terms before.</p>
+<p>For example, just open the example code for BLE. It's complex:</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/24/Screenshot-2024-06-24-at-11.39.17.png" alt="" width="643" height="326" sizes="100vw" srcset="https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-xs.png 300w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-sm.png 480w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-md.png 768w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-lg.png 1024w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-xl.png 1360w ,https://rosmianto.com/media/posts/24/responsive/Screenshot-2024-06-24-at-11.39.17-2xl.png 1600w"></figure>
+<p>What you see above is the parameter for <em>BLE payload advertisement</em>.</p>
+<p>Confused with BLE advertisement? Why would the BLE device advertise something?</p>
+<p>You won't understand the code if you don't understand the theory behind BLE standard. There are tons of terms and jargon, so you need to be familiar with:</p>
+<ul>
+<li>BLE advertisements</li>
+<li>BLE scanning</li>
+<li>GATT profile</li>
+<li>BLE Services</li>
+<li>BLE architecture</li>
+<li>BLE software stack (nimble vs. Bluedroid)</li>
+<li>etc.</li>
+</ul>
+<p>If you work with ADC, then you need to understand first:</p>
+<ul>
+<li>Different types of ADC (SAR, Sigma-Delta, Dual-slope ADC, etc.)</li>
+<li>Bit-width</li>
+<li>Sampling rate</li>
+<li>Sampling mode (continuous vs. oneshot)</li>
+<li>ADC resolution and accuracy</li>
+<li>Quantization</li>
+<li>Reference Voltage</li>
+<li>Calibration and compensation (temperature etc.)</li>
+</ul>
+<p>If you never heard most of the concepts above, no wonder you will struggle to understand ESP-IDF because it assumes you're already familiar with them.</p>
+<p>So, go back to your textbooks and reference manuals from major semiconductor vendors.</p>
+<h1>Strategy #5: Don't Create Project from Scratch, Copy from Example Code Instead</h1>
+<p>Building firmware is hard enough, so don't torture yourself by creating projects from scratch.</p>
+<p>Use example code. Pick one that's closest to your needs. For example, if you want to create firmware to interface I2C EEPROM, don't write from zero. ESP-IDF already provides that.</p>
+<p>Use it.</p>
+<p>ESP-IDF license should be good for you to copy their code (It's not legal advice though).</p>
+<h1>Strategy #6: Read ESP-IDF docs over and over again</h1>
+<p>This is the most obvious tip.</p>
+<p>You need to read the documentation over and over again.</p>
+<p>Because first read you won't understand a thing.</p>
+<p>But second read you will pick up some more details.</p>
+<p>The third read you will understand the context and the nuance.</p>
+<p>The fourth read you're already familiar where to look for extra details.</p>
+<p>The fifth read you will become more and more comfortable with the ESP-IDF inside out.</p>
+<p><em><strong>But that requires time!</strong></em></p>
+<p>Duh? In which world learning doesn't require time?</p>
+<h1>Bonus Strategy: Learn FreeRTOS concepts</h1>
+<p>This is probably an underrated strategy.</p>
+<p>You should understand that ESP-IDF uses FreeRTOS APIs almost all the time.</p>
+<p>So, you need to also familiar with FreeRTOS concepts to understand ESP-IDF code.</p>
+<ul>
+<li>Task management (creation, delete, suspend, resume)</li>
+<li>Queue</li>
+<li>Semaphore</li>
+<li>Mutex</li>
+<li>Event Group</li>
+<li>Notification</li>
+<li>etc.</li>
+</ul>
+<p>Good luck with learning ESP-IDF!</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Transitioning from Arduino to STM32? There Are Some Caveats You Should Know</title>
         <author>
@@ -19,7 +159,7 @@
         <media:content url="https://rosmianto.com/media/posts/23/8olf2u-2.jpg" medium="image" />
             <category term="Embedded Productivity"/>
 
-        <updated>2024-05-02T09:09:54+07:00</updated>
+        <updated>2024-05-02T12:11:14+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/23/8olf2u-2.jpg" alt="" />
@@ -733,71 +873,6 @@ for (int i = 0; i &lt; 254; i++) {
 <p>Upon further inspection, I noticed that the bug appeared when I added a new FreeRTOS task. The problem was I didn't properly terminate the task using vTaskDelete().</p>
 <p>Cannot show the code because it's super secret. I later added the vTaskDelete(NULL) and the problem is just gone.</p>
 <p>Happy day! Sometimes life forces you to apply what you preach. 😀</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>How to Do Freelancing As an Embedded Engineer</title>
-        <author>
-            <name>Rosmianto A. Saputro</name>
-        </author>
-        <link href="https://rosmianto.com/how-to-do-freelancing-as-an-embedded-engineer.html"/>
-        <id>https://rosmianto.com/how-to-do-freelancing-as-an-embedded-engineer.html</id>
-        <media:content url="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" medium="image" />
-            <category term="Embedded Freelancing"/>
-
-        <updated>2024-03-21T06:25:50+07:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" alt="" />
-                    Freelance is a wonderful world: It offers lots of freedom and flexibility. But, given those pluses, freelance is also hard. Because instead of just doing the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://rosmianto.com/media/posts/9/axel-richter-Ky0B3cBJGKo-unsplash.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Freelance is a wonderful world:</p>
-<ul>
-<li>You get to choose who you work with.</li>
-<li>You get to choose what project you work on.</li>
-<li>You get to choose how much you are getting paid.</li>
-</ul>
-<p>It offers lots of freedom and flexibility.</p>
-<p>But, given those pluses, freelance is also hard. Because instead of just doing the tasks from your boss, now you have to find clients. Sometimes it's easy, but often it's challenging to get clients.</p>
-<p>But again, the pluses far outweigh the minuses. No wonder freelancing is so seductive for many talented engineers. It's too sexy to ignore. You should not quit your main job if you have zero knowledge of the freelance world.</p>
-<p>That's too risky. Instead, do freelance on the side, and slowly transition from full-time employee to full-time freelancer (if you want to. I have friends who prefer part-time freelance indefinitely).</p>
-<p>Now, to be a freelance embedded engineer, you need to assess your profile first.</p>
-<p>I will be using my 3-check criteria to check your readiness:</p>
-<ol>
-<li>2 years of experience minimum</li>
-<li>10+ hours a week to spare</li>
-<li>Self-disciplined and autonomous</li>
-</ol>
-<p>Let's dissect them one by one.</p>
-<h3>1. Two Years of Experience Minimum</h3>
-<p>2 years minimum is a subjective criterion, actually. But it helps me to see if someone has enough exposure to the corporate world.</p>
-<p>Less than 2 years usually an engineer still doesn't know the full cycle of embedded project development. They never shipped a product, never tested device on the field, never knew how to handle business pressure to technical development.</p>
-<p>If you have less than 2, you still can be a freelancer, but I'm afraid you will not survive and leave negative views of freelance world.</p>
-<p>Remember, embedded freelancing is different with other types of freelance like video editing, translation, voice over. There are specific knowledge and skills required to survive it.</p>
-<h3>2. 10+ Hours/week To Spare</h3>
-<p>Now, accepting freelance projects means you work outside your main job. And the great part of freelance is, you have the freedom to set your schedule. You just need to make sure your clients are kept updated every week.</p>
-<p>In my experience, 10 hours a week at minimum is a sweet spot to make a significant project progress. Less than that usually you can only do minor work. And most clients also have time constraints.</p>
-<p>Because I say 10 hours a week, that means you can work 2 hours on Monday, 2 hours on Tuesday, and 6 hours on Saturday. Or..</p>
-<p>5 hours on Saturday, 5 hours on Sunday. You get the idea. You pick yourself.</p>
-<p>Make sure you send the progress update to your clients every week.</p>
-<h3>3. Self-Discipline and Autonomous</h3>
-<p>Lastly, you have to have those 2 traits: self-disciplined and autonomous.</p>
-<p>If you need to constantly be told what to do, what next, how to do it. Ahh, forget freelancing. It won't suit your style.</p>
-<p>Because in reality, freelancing requires lots of discipline, because your clients don't know what you should do. That's why they hired you as a freelancer.</p>
-<p>They don't have the bandwidth to check your work every hour.</p>
-<p>They only have the money to pay for your work.</p>
-<p>In my experience, someone who has these traits is usually a senior engineer.</p>
-<h2>How to Land Freelance Clients</h2>
-<p>Now, if you pass those 3-check criteria, you are ready to get clients. My method below is for long-term </p>
-<p>Follow my 3-step framework to get clients:</p>
-<p>👉 Set your expertise. What projects do you want to do? Robotics? IoT? Firmware Development?</p>
-<p>👉 “Attract” not “hunt” clients. Do that by showing your expertise through posts on LinkedIn.</p>
-<p>👉 This is the hardest step, it might test how serious you are. Publish daily for the next 30 days.<br><br>Do that and you will have someone DM you end of the month.</p>
             ]]>
         </content>
     </entry>
