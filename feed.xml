@@ -3,14 +3,14 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-08-25T13:42:18+07:00</updated>
+    <updated>2024-08-25T13:52:54+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
     <id>https://rosmianto.com</id>
 
     <entry>
-        <title>The Snake-Game Test</title>
+        <title>The Snake-Game Test 🐍</title>
         <author>
             <name>Rosmianto A. Saputro</name>
         </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/26/albert-XRhu6Ux1iNA-unsplash.jpg" medium="image" />
             <category term="Embedded Tips"/>
 
-        <updated>2024-08-25T13:42:18+07:00</updated>
+        <updated>2024-08-25T13:52:54+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/26/albert-XRhu6Ux1iNA-unsplash.jpg" alt="" />
@@ -34,9 +34,9 @@
 <p>When we’re learning any topic in embedded systems, what really important is the relevance between what we know vs. what we can do.</p>
 <p>That’s why hands-on experiment is extremely important in embedded systems.</p>
 <p>The Snake-Game Test is a simple test to check if we do enough hands-on when learning embedded system. It’s an interesting framework to help you ensure you don’t waste time learning unnecessary things.</p>
-<p>The Snake-Game Test was inspired by me when I was trying to build snake game using C++.</p>
+<p>The Snake-Game Test was inspired by me when I was trying to build a snake game using C++.</p>
 <p>When I was building the game, I didn't learn the entire C++ language constructs, but I only learned what I needed to build the snake game.</p>
-<p>That approach give me better understanding of basic game design, and basic C++ constructs. I always know if I want to learn more advanced C++ features, then I can learn it by building even more complex program.</p>
+<p>That approach gave me a better understanding of basic game design, and basic C++ constructs. I always know if I want to learn more advanced C++ features, then I can learn it by building even more complex programs.</p>
 <p>Here are the 4 foundational concepts of The Snake-Game Test:</p>
 <ol>
 <li>Real-World Project</li>
@@ -46,25 +46,25 @@
 </ol>
 <p>Let's dive right into each concept.</p>
 <h1>Real-World Project</h1>
-<p>If what you do is hyphotetical projects like foobar, building linked list, etc. You'll struggle to apply the topic you're learning.</p>
-<p>Instead, pick real-world project, that's concrete enough for you to work on, like the Snake game. Everyone has played snake game in some point in their life.</p>
-<p>Instead of writing program with 1000 linked-list, why not create a snake-game <em><strong>which applies linked-list concept into the snake?</strong></em></p>
+<p>If what you do is hypothetical projects like foobar, building linked list, etc. You'll struggle to apply the topic you're learning.</p>
+<p>Instead, pick a real-world project, that's concrete enough for you to work on, like the Snake game. Everyone has played snake game at some point in their life.</p>
+<p>Instead of writing program with 1000 linked-list, why not create a snake-game <em><strong>that applies linked-list concept to the snake?</strong></em></p>
 <h1>Just-In-Time Learning</h1>
-<p>Instead learning everything upfront (which takes too much time), The Snake-Game Framework encourage to learn just enough to make the project works.</p>
-<p>Instead of learning every C++ features from a book, learn just enough to make the snake moves. Start by asking questions:</p>
+<p>Instead of learning everything upfront (which takes too much time), The Snake-Game Framework encourages you to learn just enough to make the project work.</p>
+<p>Instead of learning every C++ feature from a book, learn just enough to make the snake move. Start by asking questions:</p>
 <ul>
 <li>Snake usually moves in grid, how to implement grid system in C++?</li>
 <li>How do I actually <em>draw</em> image using C++?</li>
 <li>How to make the snake move? What data structure to use?</li>
-<li>How to place snake's food at random place?</li>
-<li>How to detect snake's biting itself?</li>
+<li>How to place snake's food at random places?</li>
+<li>How to detect the snake biting itself?</li>
 <li>Etc.</li>
 </ul>
-<p>By answer the questions above, you are guaranteed to learn and use only the important things of C++ for the snake game.</p>
-<p>Another example, let's say you want to learn MQTT and decided to build temperature monitoring system. You don't read the source code of HiveMQ Broker. Instead, you ask these questions:</p>
+<p>By answering the questions above, you are guaranteed to learn and use only the important things of C++ for the snake game.</p>
+<p>Another example, let's say you want to learn MQTT and decide to build a temperature monitoring system. You don't read the source code of HiveMQ Broker. Instead, you ask these questions:</p>
 <ul>
 <li>What is MQTT? How can I send data from A to B?</li>
-<li>What is MQTT Topics? What is QoS? What's the difference?</li>
+<li>What is MQTT Topic? What is QoS? What's the difference?</li>
 <li>Should I write my own client or is there ready-to-use library for MQTT?</li>
 <li>etc.</li>
 </ul>
@@ -72,18 +72,19 @@
 <h1>Extremely Hands-On</h1>
 <p>We're not doing theoretical study here.</p>
 <p>We're not analyzing the game design mechanics, reward system, level-up mechanism, etc. We want to build the damn snake-eating-food game until it dies.</p>
-<p>We're not writing an essay on how MQTT actually sends and transmit data.</p>
+<p>We're not writing an essay on how MQTT actually sends and transmits data.</p>
 <p>We're not writing an essay comparing MQTT vs. HTTP vs. WebSocket.</p>
 <p>We're building something. Period.</p>
-<p>Yes, you might have to research a bit, but the goal is to assist you building the project, not writing essay.</p>
+<p>Yes, you might have to research a bit, but the goal is to assist you in building the project, not writing essay.</p>
 <h1>Iterative Approach</h1>
 <p>The Snake-Game Framework encourages iterative process.</p>
 <p>First, you make the program draw grid. No snake yet? No problem.</p>
 <p>Second, you make the program render the snake. No foods yet? No problem.</p>
 <p>Third, you make the snake move and add food. Buggy? Good. Fix it.</p>
 <p>Next, you start adding wall detection, self-bite detection, etc.</p>
-<p>The point is, nobody is watching you, so you might want to make as many stupid mistakes as humanly possible (you will be surprised how many recompilation I did just to fix a simple bug).</p>
-<p> </p>
+<p>The point is, nobody is watching you, so you might want to make as many stupid mistakes as humanly possible (you will be surprised how many recompilations I did just to fix a simple bug).</p>
+<p>This Snake-Game Test (probably I should call it "framework") will <strong>help you close the gap between what you know vs. what you can do</strong>.</p>
+<p>Happy learning! 🐍</p>
 <p><!-- notionvc: 341f702b-7600-4fac-8e06-459ae9cecf46 --></p>
             ]]>
         </content>
