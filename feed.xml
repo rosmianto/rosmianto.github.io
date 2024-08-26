@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-08-25T21:35:54+07:00</updated>
+    <updated>2024-08-26T08:21:05+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/27/alex-radelich-2gYsZUmockw-unsplash.jpg" medium="image" />
             <category term="Embedded Career"/>
 
-        <updated>2024-08-25T21:35:54+07:00</updated>
+        <updated>2024-08-26T08:21:05+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/27/alex-radelich-2gYsZUmockw-unsplash.jpg" alt="" />
@@ -66,7 +66,7 @@
 <p>To successfully work on Embedded Systems, you actually need 3 main skills:<br><br>👉 Computer Science<br>👉 Electrical Engineering<br>👉 A third <span class="text-primary font-bold">field</span> depending on your interest</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/27/venn.avif" alt="" width="430" height="406"></figure><br>We need CS because there are programming aspects in Embedded Systems. We have to create robust, and efficient code for the device.<br><br>We need EE because we will be interfacing with electronic devices like sensors and actuators.<br><br>Understanding the electronics under the hoods will make your life as an Embedded Engineer easy.<br><br>Lastly, we need a third <span class="text-primary font-bold">field</span>. It means that if we work on embedded devices on vehicles then we need to learn and understand automotive: its standards, the rules, the principles in auto.<br><br>The same with other <span class="text-primary font-bold">field</span>s.<br><br>Personally I was working in mining and marine, so I needed to learn and understand how mining processes are done, how harsh the environment is, etc.</p>
 <h1>Make a solid transition plan</h1>
-<p>If you want to switch careers, chance is, you already have valuable skills under your belt.</p>
+<p>If you want to switch careers, chances are, you already have valuable skills under your belt.</p>
 <p>For example, if you are a data scientist. You can exploit the data analysis (in case you work with sensor data), data processing and signal processing, etc.</p>
 <p>If you are an AI/ML engineer, you can exploit your AI/ML knowledge and pair it with embedded building blocks above and you will make a solid embedded AI engineer.</p>
 <p>If you are a web developer, that's even easier. You have plenty of software design experience, software architecture skills (which is highly valuable in embedded systems), basically you will need to go lower level than the web.</p>
