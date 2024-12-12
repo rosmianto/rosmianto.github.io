@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2024-12-12T20:44:05+07:00</updated>
+    <updated>2024-12-12T20:49:01+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -19,7 +19,7 @@
         <media:content url="https://rosmianto.com/media/posts/28/marvin-meyer-SYTO3xs06fU-unsplash.jpg" medium="image" />
             <category term="Embedded Career"/>
 
-        <updated>2024-12-12T20:44:05+07:00</updated>
+        <updated>2024-12-12T20:49:01+07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://rosmianto.com/media/posts/28/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="" />
@@ -70,7 +70,7 @@
 <h1>Ultra-tight feedback loop</h1>
 <p>Feedback will ensure you're heading in the right path.</p>
 <p>It's like arrow above your head on Crazy Taxi game.</p>
-<p><img loading="lazy" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/71230/ss_5ddc57dd3e43d29787eceaf42e0e30a49419a371.600x338.jpg?t=1733765150" data-is-external-image="true"></p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/71230/ss_5ddc57dd3e43d29787eceaf42e0e30a49419a371.600x338.jpg?t=1733765150" data-is-external-image="true"></figure>
 <p>Humans are full of blindspots, and feedback uncovers them. If somehow you are misguided, based on the feedback, you can realign so you can achieve your career goal faster.</p>
 <p>So the cycle is clear: you work 👉 get feedback 👉 you improve 👉 you work 👉 get feedback.</p>
 <p>It's a virtuous cycle, it's a positive feedback loop that will guarantee you career improvement. Combine that cycle with even tighter loop, you will get ultra-tight feedback loop.</p>
@@ -145,147 +145,146 @@
 <p>Now, let's ask AI to help us do it:</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://rosmianto.com/media/posts/28/Screenshot-2024-12-11-at-09.09.18.png" alt="" width="640" height="268" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://rosmianto.com/media/posts/28/responsive/Screenshot-2024-12-11-at-09.09.18-xs.png 384w ,https://rosmianto.com/media/posts/28/responsive/Screenshot-2024-12-11-at-09.09.18-sm.png 600w ,https://rosmianto.com/media/posts/28/responsive/Screenshot-2024-12-11-at-09.09.18-md.png 768w ,https://rosmianto.com/media/posts/28/responsive/Screenshot-2024-12-11-at-09.09.18-lg.png 1200w ,https://rosmianto.com/media/posts/28/responsive/Screenshot-2024-12-11-at-09.09.18-xl.png 1600w"></figure>
 <p>Here's the raw output from my ChatGPT:</p>
-<blockquote>
-<p>Building a GPS tracker for heavy machinery requires attention to durability, precision, and functionality tailored to the operational needs of construction, mining, and agricultural equipment. Here are the <strong>standard features</strong> you should implement:</p>
-<h3><strong>Core Features</strong></h3>
+<p><em>Building a GPS tracker for heavy machinery requires attention to durability, precision, and functionality tailored to the operational needs of construction, mining, and agricultural equipment. Here are the <strong>standard features</strong> you should implement:</em></p>
+<h3><em><strong>Core Features</strong></em></h3>
 <ol>
 <li>
-<p><strong>Real-Time Location Tracking</strong></p>
+<p><em><strong>Real-Time Location Tracking</strong></em></p>
 <ul>
-<li>Use GPS/GLONASS/Galileo/Beidou for accurate global positioning.</li>
-<li>Update intervals should be configurable (e.g., every 10 seconds to every few minutes).</li>
+<li><em>Use GPS/GLONASS/Galileo/Beidou for accurate global positioning.</em></li>
+<li><em>Update intervals should be configurable (e.g., every 10 seconds to every few minutes).</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Geofencing</strong></p>
+<p><em><strong>Geofencing</strong></em></p>
 <ul>
-<li>Allow users to set virtual boundaries.</li>
-<li>Trigger alerts when the machinery leaves or enters a specified area.</li>
+<li><em>Allow users to set virtual boundaries.</em></li>
+<li><em>Trigger alerts when the machinery leaves or enters a specified area.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Activity Monitoring</strong></p>
+<p><em><strong>Activity Monitoring</strong></em></p>
 <ul>
-<li>Track engine runtime, idle time, and operational hours.</li>
-<li>Provide insights into machine usage and efficiency.</li>
+<li><em>Track engine runtime, idle time, and operational hours.</em></li>
+<li><em>Provide insights into machine usage and efficiency.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Anti-Theft Alerts</strong></p>
+<p><em><strong>Anti-Theft Alerts</strong></em></p>
 <ul>
-<li>Tamper detection (e.g., vibration or physical removal alert).</li>
-<li>Movement detection when the machine is supposed to be stationary.</li>
+<li><em>Tamper detection (e.g., vibration or physical removal alert).</em></li>
+<li><em>Movement detection when the machine is supposed to be stationary.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Durable Design</strong></p>
+<p><em><strong>Durable Design</strong></em></p>
 <ul>
-<li>Rugged, waterproof, and dustproof casing (e.g., IP67 or higher).</li>
-<li>Vibration and shock resistance to withstand harsh environments.</li>
+<li><em>Rugged, waterproof, and dustproof casing (e.g., IP67 or higher).</em></li>
+<li><em>Vibration and shock resistance to withstand harsh environments.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Remote Immobilization</strong></p>
+<p><em><strong>Remote Immobilization</strong></em></p>
 <ul>
-<li>Enable operators to remotely disable the machinery in case of theft or unauthorized use.</li>
+<li><em>Enable operators to remotely disable the machinery in case of theft or unauthorized use.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Power Supply and Backup</strong></p>
+<p><em><strong>Power Supply and Backup</strong></em></p>
 <ul>
-<li>Connect to the heavy machinery's power source.</li>
-<li>Include a rechargeable battery with sufficient backup (e.g., 24–48 hours) in case of disconnection.</li>
+<li><em>Connect to the heavy machinery's power source.</em></li>
+<li><em>Include a rechargeable battery with sufficient backup (e.g., 24–48 hours) in case of disconnection.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Data Logging</strong></p>
+<p><em><strong>Data Logging</strong></em></p>
 <ul>
-<li>Store data locally when the cellular signal is lost and sync it once the connection is restored.</li>
-<li>Include non-volatile memory to prevent data loss during power outages.</li>
+<li><em>Store data locally when the cellular signal is lost and sync it once the connection is restored.</em></li>
+<li><em>Include non-volatile memory to prevent data loss during power outages.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Connectivity</strong></p>
+<p><em><strong>Connectivity</strong></em></p>
 <ul>
-<li><strong>Cellular Connectivity</strong>: Support 2G/3G/4G LTE and future-proofing for 5G.</li>
-<li><strong>Satellite Communication</strong> (optional): For remote areas without cellular coverage.</li>
-<li><strong>Bluetooth/Wi-Fi</strong>: For close-range configuration and firmware updates.</li>
+<li><em><strong>Cellular Connectivity</strong>: Support 2G/3G/4G LTE and future-proofing for 5G.</em></li>
+<li><em><strong>Satellite Communication</strong> (optional): For remote areas without cellular coverage.</em></li>
+<li><em><strong>Bluetooth/Wi-Fi</strong>: For close-range configuration and firmware updates.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Over-the-Air (OTA) Updates</strong></p>
+<p><em><strong>Over-the-Air (OTA) Updates</strong></em></p>
 <ul>
-<li>Allow remote firmware and software updates.</li>
+<li><em>Allow remote firmware and software updates.</em></li>
 </ul>
 </li>
 </ol>
 <hr>
-<h3><strong>Advanced Features</strong></h3>
+<h3><em><strong>Advanced Features</strong></em></h3>
 <ol>
 <li>
-<p><strong>Sensor Integration</strong></p>
+<p><em><strong>Sensor Integration</strong></em></p>
 <ul>
-<li>Accelerometers and gyroscopes for motion, tilt, and vibration monitoring.</li>
-<li>Temperature, humidity, and fuel sensors for environmental and operational monitoring.</li>
+<li><em>Accelerometers and gyroscopes for motion, tilt, and vibration monitoring.</em></li>
+<li><em>Temperature, humidity, and fuel sensors for environmental and operational monitoring.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Route Optimization</strong></p>
+<p><em><strong>Route Optimization</strong></em></p>
 <ul>
-<li>Provide insights into optimal routes for heavy machinery movement.</li>
+<li><em>Provide insights into optimal routes for heavy machinery movement.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Driver Behavior Monitoring</strong></p>
+<p><em><strong>Driver Behavior Monitoring</strong></em></p>
 <ul>
-<li>Track metrics like harsh braking, sharp turns, and over-speeding.</li>
+<li><em>Track metrics like harsh braking, sharp turns, and over-speeding.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Predictive Maintenance</strong></p>
+<p><em><strong>Predictive Maintenance</strong></em></p>
 <ul>
-<li>Integrate with CAN bus or OBD-II to monitor engine health and notify users of potential issues.</li>
+<li><em>Integrate with CAN bus or OBD-II to monitor engine health and notify users of potential issues.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Dashboards and Reporting</strong></p>
+<p><em><strong>Dashboards and Reporting</strong></em></p>
 <ul>
-<li>Provide a web or mobile app for tracking, analytics, and reporting.</li>
-<li>Generate automatic reports (e.g., daily, weekly, or monthly usage summaries).</li>
+<li><em>Provide a web or mobile app for tracking, analytics, and reporting.</em></li>
+<li><em>Generate automatic reports (e.g., daily, weekly, or monthly usage summaries).</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Multi-Device Support</strong></p>
+<p><em><strong>Multi-Device Support</strong></em></p>
 <ul>
-<li>Track and manage multiple pieces of machinery from a single interface.</li>
+<li><em>Track and manage multiple pieces of machinery from a single interface.</em></li>
 </ul>
 </li>
 </ol>
 <hr>
-<h3><strong>Compliance Features</strong></h3>
+<h3><em><strong>Compliance Features</strong></em></h3>
 <ol>
 <li>
-<p><strong>Regulatory Compliance</strong></p>
+<p><em><strong>Regulatory Compliance</strong></em></p>
 <ul>
-<li>Ensure compliance with relevant regulations (e.g., emissions, safety, or transport laws) in the target region.</li>
+<li><em>Ensure compliance with relevant regulations (e.g., emissions, safety, or transport laws) in the target region.</em></li>
 </ul>
 </li>
 <li>
-<p><strong>Audit Trail</strong></p>
+<p><em><strong>Audit Trail</strong></em></p>
 <ul>
-<li>Keep logs of operational data for legal or maintenance purposes.</li>
+<li><em>Keep logs of operational data for legal or maintenance purposes.</em></li>
 </ul>
 </li>
 </ol>
 <hr>
-<h3><strong>Additional Considerations</strong></h3>
+<h3><em><strong>Additional Considerations</strong></em></h3>
 <ul>
-<li><strong>Energy Efficiency</strong>: Ensure the tracker consumes minimal power from the machinery.</li>
-<li><strong>Localization</strong>: Support multiple languages and units of measurement for global users.</li>
-<li><strong>Scalability</strong>: Design the system to support fleets of various sizes.</li>
+<li><em><strong>Energy Efficiency</strong>: Ensure the tracker consumes minimal power from the machinery.</em></li>
+<li><em><strong>Localization</strong>: Support multiple languages and units of measurement for global users.</em></li>
+<li><em><strong>Scalability</strong>: Design the system to support fleets of various sizes.</em></li>
 </ul>
-<p>By focusing on these features, you can create a reliable GPS tracker that meets the specific demands of heavy machinery operations while offering value through advanced monitoring and management capabilities.</p>
-</blockquote>
+<p><em>By focusing on these features, you can create a reliable GPS tracker that meets the specific demands of heavy machinery operations while offering value through advanced monitoring and management capabilities.</em></p>
+<p> </p>
 <p>I'm not even thinking about geofencing and Anti-theft alert. But there are many good features to know.</p>
 <p>Now, I don't have to implement everything, I have the list, and know I just choose what I need to answer the business problem, and I'll propose it to my boss.</p>
 <p>Yes, the answer isn't complete. For example, I need it to be configurable, but I can always ask a follow-up request to chatGPT to breakdown the settings I need to have (interval settings, LoRaWAN OTAA or ABP, timeout settings, etc.)</p>
