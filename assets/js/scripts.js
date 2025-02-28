@@ -1,3 +1,30 @@
+// Sticky menu
+let lastScrollPosition = 0;
+const header = document.getElementById("js-header");
+const stickyMenu = document.getElementById("js-navbar-menu");
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 80) {
+        header.classList.remove("is-visible");
+        header.classList.add("is-hidden");
+    } else if (currentScrollPosition < lastScrollPosition) {
+        header.classList.remove("is-hidden");
+        header.classList.add("is-visible");
+        stickyMenu?.classList.add("is-sticky");
+    }
+
+    if (currentScrollPosition < 1) {
+        header.classList.remove("is-visible");
+        stickyMenu?.classList.remove("is-sticky");
+    }
+
+    lastScrollPosition = currentScrollPosition;
+});
+
+
+
 // Dropdown menu
 (function (menuConfig) {
 	/**
@@ -428,13 +455,54 @@
 })(window.publiiThemeMenuConfig);
 
 
+// Load comments
+const comments = document.getElementById("js-comments");
+
+if (comments) {
+    comments.addEventListener("click", () => {
+        comments.classList.toggle("is-hidden");
+        const container = document.getElementById("js-comments-inner");
+        if (container) {
+            container.classList.toggle("is-visible");
+        }
+    });
+}
+
+
+// Load search input area only if search elements exist
+const searchButton = document.querySelector('.js-search-btn');
+const searchOverlay = document.querySelector('.js-search-overlay');
+
+if (searchButton && searchOverlay) {
+    const searchInput = searchOverlay.querySelector('input[type="search"]');
+
+    searchButton.addEventListener('click', (event) => {        
+        event.stopPropagation();
+        searchOverlay.classList.toggle('expanded');
+       
+        setTimeout(() => {
+            if (searchOverlay.classList.contains('expanded') && searchInput) {
+                searchInput.focus();
+            }
+        }, 60);        
+    });
+
+    searchOverlay.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+
+    document.body.addEventListener('click', () => {
+        searchOverlay.classList.remove('expanded');
+    });
+}
+
 // Share buttons pop-up
 (function () {
     // share popup
-    let shareButton = document.querySelector('.js-post__share-button');
-    let sharePopup = document.querySelector('.js-post__share-popup');
+    const shareButton = document.querySelector('.js-content__share-button');
+    const sharePopup = document.querySelector('.js-content__share-popup');
 
-    if (shareButton) {
+    if (shareButton && sharePopup) {
         sharePopup.addEventListener('click', function (e) {
             e.stopPropagation();
         });
@@ -451,67 +519,79 @@
     }
 
     // link selector and pop-up window size
-    var Config = {
+    const Config = {
         Link: ".js-share",
         Width: 500,
         Height: 500
     };
-    // add handler links
-    var slink = document.querySelectorAll(Config.Link);
-    for (var a = 0; a < slink.length; a++) {
-        slink[a].onclick = PopupHandler;
-    }
+
+    // add handler to links
+    const shareLinks = document.querySelectorAll(Config.Link);
+    shareLinks.forEach(link => {
+        link.addEventListener('click', PopupHandler);
+    });
+
     // create popup
     function PopupHandler(e) {
-        e = (e ? e : window.event);
-        var t = (e.target ? e.target : e.srcElement);
+        e.preventDefault();
+
+        const target = e.target.closest(Config.Link);
+        if (!target) return;
+
         // hide share popup
         if (sharePopup) {
             sharePopup.classList.remove('is-visible');
         }
+
         // popup position
-        var px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
-            py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
+        const px = Math.floor((window.innerWidth - Config.Width) / 2);
+        const py = Math.floor((window.innerHeight - Config.Height) / 2);
+
         // open popup
-        var link_href = t.href ? t.href : t.parentNode.href;
-        var popup = window.open(link_href, "social",
-            "width=" + Config.Width + ",height=" + Config.Height +
-            ",left=" + px + ",top=" + py +
-            ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1");
+        const linkHref = target.href;
+        const popup = window.open(linkHref, "social", `
+            width=${Config.Width},
+            height=${Config.Height},
+            left=${px},
+            top=${py},
+            location=0,
+            menubar=0,
+            toolbar=0,
+            status=0,
+            scrollbars=1,
+            resizable=1
+        `);
+
         if (popup) {
             popup.focus();
-            if (e.preventDefault) e.preventDefault();
-            e.returnValue = false;
         }
-
-        return !!popup;
     }
 })();
 
-// Back to top 
-var backToTopButton = document.getElementById("backToTop");
-if (backToTopButton) {
-   window.onscroll = function() {backToTopScrollFunction()};
 
-   function backToTopScrollFunction() {
-   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      backToTopButton.classList.add("is-visible");
-   } else {
-      backToTopButton.classList.remove("is-visible");
-     }
-   }
+// Back to Top
+const scrollBtn = document.querySelector('.js-scroll-to-top');
 
-   function backToTopFunction() {
-     document.body.scrollTop = 0;
-     document.documentElement.scrollTop = 0;
-   };
+if (scrollBtn) {
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    document.addEventListener('scroll', () => {
+        if (window.scrollY < window.innerHeight * 0.20) {
+            scrollBtn.classList.remove('is-visible');
+        } else {
+            scrollBtn.classList.add('is-visible');
+        }
+    });
 }
 
 
-/**
- * Responsive embeds script
- */
- (function () {
+// Responsive embeds script
+(function () {
 	let wrappers = document.querySelectorAll('.post__video, .post__iframe');
 
 	for (let i = 0; i < wrappers.length; i++) {
@@ -548,129 +628,4 @@ if (backToTopButton) {
 			wrappers[i].setAttribute('style', '--embed-aspect-ratio:' + ratioValue);
 		}
 	}
-})();
-
-// Search
-var searchButton = document.querySelector('.js-search-btn');
-    searchOverlay = document.querySelector('.js-search-overlay');
-    searchInput = document.querySelector('.search__input');
-
-if (searchButton) {
-    searchButton.addEventListener('click', function () {        
-        searchOverlay.classList.toggle('expanded');
-       
-        if (searchInput) {
-            setTimeout(function() {
-                if (searchOverlay.classList.contains('expanded')) {
-                    searchInput.focus();
-                }
-            }, 60);  
-        }      
-    });
-
-    searchOverlay.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-
-    searchButton.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-
-    document.body.addEventListener('click', function () {
-        searchOverlay.classList.remove('expanded');
-    });
-}
-
-/**
- * Layout switcher
- */
- (function () {
-	let layoutButtons = document.querySelectorAll('.switchers__item');
-	let contentWrapper = document.querySelector('.l-grid');
-	let articles;
-
-	if (contentWrapper) {
-		articles = contentWrapper.querySelectorAll('.c-card');
-	}
-
-	if (!contentWrapper || !layoutButtons.length || (articles && !articles.length)) {
-		return;
-	}
-
-	let gridBtn = layoutButtons[0];
-	let rowsBtn = layoutButtons[1];
-
-	gridBtn.addEventListener('click', e => {
-		e.preventDefault();
-		let isActive = gridBtn.classList.contains('is-active');
-
-		if (!isActive) {
-			setGridLayout();
-		}
-	});
-
-	rowsBtn.addEventListener('click', e => {
-		e.preventDefault();
-		let isActive = rowsBtn.classList.contains('is-active');
-
-		if (!isActive) {
-			setRowsLayout();
-		}
-	});
-
-	function setGridLayout () {
-		gridBtn.classList.add('is-active');
-		rowsBtn.classList.remove('is-active');
-		contentWrapper.classList.remove('l-grid--1');
-		articles = contentWrapper.querySelectorAll('.c-card');
-
-		for (let i = 0; i < articles.length; i++) {
-			articles[i].classList.remove('c-card--rows');
-		}
-
-		localStorage.setItem('persona-theme-selected-layout', 'grid');	
-		resetIsotopeLayout();
-	}
-
-	function setRowsLayout () {
-		gridBtn.classList.remove('is-active');
-		rowsBtn.classList.add('is-active');
-		contentWrapper.classList.add('l-grid--1');
-		articles = contentWrapper.querySelectorAll('.c-card');
-
-		for (let i = 0; i < articles.length; i++) {
-			articles[i].classList.add('c-card--rows');
-		}
-
-		localStorage.setItem('persona-theme-selected-layout', 'rows');
-		resetIsotopeLayout();
-	}
-
-	function resetIsotopeLayout () {
-		if (window.personaThemeIsotopeInstance) {
-			if (document.querySelector('.filter__item.is-active')) {
-				window.personaThemeIsotopeInstance.arrange({
-					filter: document.querySelector('.filter__item.is-active').getAttribute('data-filter')
-				});
-			} else {
-				window.personaThemeIsotopeInstance.arrange();
-			}
-		}
-	}
-
-	window.addEventListener("DOMContentLoaded", function () {
-		setTimeout(() => {
-			if (localStorage.getItem('persona-theme-selected-layout')) {
-				let savedLayout = localStorage.getItem('persona-theme-selected-layout');
-	
-				if (savedLayout === 'grid') {
-					setGridLayout();
-				}
-	
-				if (savedLayout === 'rows') {
-					setRowsLayout();
-				}
-			}
-		}, 0);
-	}, false);
 })();
