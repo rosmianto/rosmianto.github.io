@@ -3,7 +3,7 @@
     <title>Captain Embedded 👨🏻‍✈️⚓</title>
     <link href="https://rosmianto.com/feed.xml" rel="self" />
     <link href="https://rosmianto.com" />
-    <updated>2025-03-01T04:04:00+07:00</updated>
+    <updated>2025-03-01T09:36:35+07:00</updated>
     <author>
         <name>Rosmianto A. Saputro</name>
     </author>
@@ -39,14 +39,14 @@
 <p>In this article I'll show you my personal system to learn more and earn more.</p>
 <h1>How to Learn More</h1>
 <p>Let's use me as an example.</p>
-<p>I used to work on tedious tasks: assembling hundreds of PCBs, fixing soldering mistakes, testing hardware one by one, writing basic firmware for prototyping, adding features only when asked, fixing bugs only if there's complaint, etc.</p>
-<p>And because I didn't have full brain back then, my work is just like that: boring, uninspiring. I was just trying to get through the day so I can do it again tomorrow.</p>
-<p>But when I filled up my brain, things were changing. My company asked me to let go the tedious tasks, and gave me more harder firmware development project, which was way interesting.</p>
-<p>I got to work on advanced firmware development (e.g. building USB-based device), I wrote USB driver, testing new firmware mechanism for our next-gen product.</p>
-<p>For the record, I didn't learn new topics at work. I learned new topics at my dorm room. I spent every evening tinkering with new firmware concepts, build a prototype, and share my progress with my boss.</p>
-<p>At first my boss was just like "<em>yeah yeah, good job. Now f* off, I have something else to do</em>". But I keep learning and sharing, until suddenly my boss was like "<em>Oh hey Ross, your work is good. Interested to make the prototype become a product here? You've laid some ground work, so I believe you can just continue, right?</em>"</p>
-<p>So yeah, I've proved that filling up my brain did indeed increase my ability, thus allowed me to work on better, more interesting tasks.</p>
-<p>Here's my system I use to learn more. There are two concepts to note here: <strong>Principles</strong> (which is more philosophical) and <strong>Steps</strong> (which is more practical).</p>
+<p>I used to work on tedious tasks: assembling hundreds of PCBs, fixing soldering mistakes, testing hardware one by one, writing basic firmware for prototyping, adding features only when asked, fixing bugs only if there's a complaint, etc.</p>
+<p>And because I didn't have full brain back then, my work is just like that: boring, uninspiring. I was just trying to get through the day so I could do it again tomorrow.</p>
+<p>But when I filled up my brain, things were changing. My company asked me to let go of the tedious tasks, and gave me a harder firmware development project, which was way interesting.</p>
+<p>I got to work on advanced firmware development (e.g. building USB-based device), I wrote USB driver, testing new firmware for our next-gen product.</p>
+<p>For the record, I didn't learn new topics at work. I learned new topics in my dorm room. I spent every evening tinkering with new firmware concepts, building a prototype, and sharing my progress with my boss.</p>
+<p>At first my boss was just like "<em>yeah yeah, good job. Now f* off, I have something else to do</em>". But I kept learning and sharing, until suddenly my boss was like "<em>Oh hey Ross, your work is good. Interested to make the prototype become a product here? You've laid some groundwork, so I believe you can just continue, right?</em>"</p>
+<p>So yeah, I've proved that filling up my brain did indeed increase my ability, thus allowing me to work on better, more interesting tasks.</p>
+<p>Here's the system I use to learn more. There are two concepts to note here: <strong>Principles</strong> (which is more philosophical) and <strong>Steps</strong> (which is more practical).</p>
 <p>To learn more as an embedded engineer, I followed these 4 principles:</p>
 <ol>
 <li>Learn at <strong>home</strong>, not at <strong>work</strong>.</li>
@@ -54,21 +54,21 @@
 <li>Heavy on <strong>hands-on</strong>, not just <strong>consuming</strong>.</li>
 <li><strong>Share</strong> your learning, not in <strong>silos</strong>.</li>
 </ol>
-<p>Remember, if you unlock the secret of learning how to learn more, you'll get to work on more interesting problems, which leads to more satisfied career, which leads to a more satisfied life.</p>
+<p>Remember, if you unlock the secret of learning how to learn more, you'll get to work on more interesting problems, which leads to a more satisfied career, which leads to a more satisfied life.</p>
 <p>Now, let's dive into each point.</p>
 <h2>1. Learn at home, not at work</h2>
 <p>This is a bit controversial. Some renowned engineers like Embedded Artistry's founder Johnston said he doesn't have side projects, he learns at work, and he works at work.</p>
 <p>But for me, if you're really obsessed with something, can you actually <em>not think about that thing</em> even outside work? I personally can't. That's why I keep learning at home. Because I'm obsessed.</p>
 <p>Yes, we learn a bit at work, but it's limited to our tasks. You can't just learn deeper and deeper at work, while neglecting the firmware you should be writing.</p>
 <h4>Company is like an F1 team, and work is the race.</h4>
-<p>Does Lewis Hamilton, the legendary F1 driver, learn how to cornering well at practice session or on a race?</p>
-<p>Same goes with our race as an embedded engineer. My principle: work is to perform, home is to practice (you can practice at work when there's zero tasks, though. Like I did).</p>
+<p>Does Lewis Hamilton, the legendary F1 driver, learn how to corner well at practice sessions or in a race?</p>
+<p>The same goes for our race as embedded engineers. My principle: work is to perform, home is to practice (you can practice at work when there are zero tasks, though. Like I did).</p>
 <h4>At home, your learning is unrestricted.</h4>
 <p>You want to practice writing CMake for your side projects? You can.</p>
 <p>You want to test how to overclock Teensy 4.1 to 1GHz? You can.</p>
 <p>You want to setup MQTT Broker using Docker? You can.</p>
-<p>I don't know about you, but I can't do those things at work. I have many other things to do. And waiting for my boss to give permission to setup MQTT broker is like waiting snail crosses a mountain.</p>
-<h4>You're not required to buy hardware though.</h4>
+<p>I don't know about you, but I can't do those things at work. I have many other things to do. And waiting for my boss to give permission to setup MQTT broker is like waiting for a snail to cross a mountain.</p>
+<h4>You're not required to buy hardware.</h4>
 <p>While doing experiment at home, you don't necessarily have to use hardware though. If you're an embedded software engineer, your ultimate goal is to write robust and maintainable software. So practice at home things like:</p>
 <ul>
 <li>Modularity design</li>
@@ -79,15 +79,15 @@
 <p>If you want to focus on hardware, that's also doable, and you're still not required to buy expensive hardware. You might ask, "<em>what if I want to use expensive equipment like oscilloscope, signal generator, signal analyzer, etc?</em>"</p>
 <p>My answer: You can borrow, you can rent, or you can buy the cheaper variants. I would rather buy a cheap oscilloscope (which I did) to support my experiments, because I will use it my entire career. So, I would save my money and buy a $300 oscilloscope.</p>
 <p>That being said, I work as an embedded freelancer (<a href="https://freelancer.rosmianto.com/" target="_blank" rel="noopener noreferrer">click here if you're interested in becoming one</a>), so borrowing company's equipment to finish my freelance projects sounds weird to me.</p>
-<p>Now, the question is: do you <em>really need</em> an expensive equipment? Because if you just working with low frequency signals, you can get hobbyist variant of everything you need (which I did).</p>
+<p>Now, the question is: do you <em>really need</em> expensive equipment? Because if you just work with low-frequency signals, you can get a hobbyist variant of everything you need (which I did).</p>
 <h2>2. Follow your curiosity, not hype</h2>
 <p>I never understand hype.</p>
-<p>You do something because everybody else doing it? Doesn't each person have different interests and are facing different problem in their life?</p>
-<p>You shouldn't be tinkering with LLM (Large Language Model) because everybody else's doing it.</p>
-<p>You shouldn't be buying Jetson Nano because everybody experimented with image recognition.</p>
+<p>You do something because everybody else is doing it? Doesn't each person have different interests and are facing different problem in their life?</p>
+<p>You shouldn't be tinkering with LLM (Large Language Model) because everybody else is doing it.</p>
+<p>You shouldn't be buying Jetson Nano because everybody has experimented with image recognition.</p>
 <p>You should be doing all of those because you see them as a piece of puzzle to complete your embedded engineering journey.</p>
-<p>I honestly haven't even tried to deploy AI model on embedded device, even once. Because why would I? I will do it whenever I see it fits my puzzle.</p>
-<p>I've never setup Kubernetes cluster, because why would I? Yes it's interesting, but it doesn't fit my bill. I keep my option open but not necessarily jump into hype train.</p>
+<p>I honestly haven't even tried to deploy AI model on embedded device, even once. Because why would I? I will do it whenever I see it fit my puzzle.</p>
+<p>I've never setup Kubernetes cluster, because why would I? Yes it's interesting, but it doesn't fit my bill. I keep my options open but not necessarily jump into hype train.</p>
 <p>Do you know what I've learned? Here:</p>
 <ul>
 <li>Writing interpreter for Brainfuck (an esoteric programming language)</li>
@@ -95,9 +95,9 @@
 <li>Writing JVM for running J2ME games (my childhood memory. Still ongoing)</li>
 <li>Practicing to share my embedded systems brain <a href="https://www.linkedin.com/in/rosmianto/" target="_blank" rel="noopener noreferrer">on LinkedIn</a></li>
 </ul>
-<p>All those above are nothing like hype. But they really fit into my career puzzle. Because when you focus on your own puzzle, you will solve more relevant problems to your life and be satisfied with what you do.</p>
+<p>All the above are nothing like hype. But they really fit into my career puzzle. Because when you focus on your own puzzle, you will solve more relevant problems in your life and be satisfied with what you do.</p>
 <h2>3. Heavy on <strong>hands-on</strong>, not just <strong>consuming</strong></h2>
-<p>This is the biggest mistake many beginner embedded students/engineers did.</p>
+<p>This is the biggest mistake many beginner embedded students/engineers make.</p>
 <p>They consumed everything:</p>
 <ul>
 <li>Embedded systems books</li>
@@ -106,10 +106,10 @@
 <li>Embedded podcasts</li>
 <li>Reading application notes</li>
 <li>Downloading brochures</li>
-<li>Buying udemy courses</li>
+<li>Buying Udemy courses</li>
 </ul>
-<p>But they haven't even touched the <span style="text-decoration: line-through;">grass</span> hardware. It's a procrastination in disguise.</p>
-<p>Embedded engineering industry is heavy with hands-on. You don't really know XYZ until you've built XYZ. Reading, watching, listening, and buying stuff won't automatically install the new insights directly to your brain.</p>
+<p>But they haven't even touched the <span style="text-decoration: line-through;">grass</span> hardware. It's procrastination in disguise.</p>
+<p>Embedded engineering industry is heavy with hands-on. You don't really know XYZ until you've built XYZ. Reading, watching, listening, and buying stuff won't automatically install the new insights directly in your brain.</p>
 <p>For me, learning material is just like a treasure map. It's important to set the destination. But without actually moving to the goal, you will never get your treasure.</p>
 <p>So, build your way into mastery.</p>
 <p>If you're not sure about what project to build, and how, here are two things to help you:</p>
